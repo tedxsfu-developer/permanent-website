@@ -13,7 +13,7 @@ const PageHelmets = {
         'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Our goal is to bring people together to share a TED-like experience while promoting ideas worth spreading.'
     ),
     opportunity: buildPageHelmet(
-        'Be a part of TEDxSFU 2022',
+        'Be a part of TEDxSFU',
         'https://www.tedxsfu.com/opportunity',
         'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Join us and be a part of TEDxSFU Conference.'
     ),

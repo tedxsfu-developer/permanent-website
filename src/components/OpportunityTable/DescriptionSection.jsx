@@ -38,12 +38,12 @@ const DescriptionSection = (props) => {
         <section key={props.opportunity.id} className={`opportunity-info ${props.className}`}>
             <h2>{props.opportunity.role}</h2>
             <div className='opportunity-details'>
-                <h3>Application Period</h3>
+                <h3 className="all-caps">Application Period</h3>
                 <p>{props.opportunity.application_period}</p>
             </div>
             <div className='opportunity-details'>
                 <div className='flex space-between'>
-                    <h3>Description</h3>
+                    <h3 className="all-caps">Description</h3>
                     {isExpanded ? dropUpButton : dropDownButton}
                 </div>
                 <div id={props.opportunity.id}

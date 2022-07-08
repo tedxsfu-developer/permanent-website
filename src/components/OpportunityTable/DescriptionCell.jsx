@@ -59,20 +59,18 @@ const OpportunityTable = (props) => {
                     link={props.opportunity.application_link}
                     label="Click Here To Apply"
                     isInternal={false}
-                    className="default"
+                    className='transparent'
                     shouldOpenInNewTab={true}
                 />}
             {props.opportunity.status === "closed" &&
                 <DisabledButton
                     link="https://google.com"
                     label="Application Closed"
-                    className="default"
                 />}
             {props.opportunity.status === "upcoming" &&
                 <DisabledButton
                     link="https://google.com"
                     label="Opening soon"
-                    className="default"
                 />}
         </React.Fragment>
     );

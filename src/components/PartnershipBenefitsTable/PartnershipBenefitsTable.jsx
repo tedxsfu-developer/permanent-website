@@ -5,13 +5,13 @@ import BenefitItem from "./BenefitItem";
 const PartnershipBenefitsTable = (props) => {
     const benefits = PartnerWithUs.partnershipBenefits.benefits;
     return (
-        <section id="benefits">
-            {benefits.map((benefit) => {
+        <ul id="benefits">
+            {benefits.map((benefit, index) => {
                 return (
-                    <BenefitItem benefit={benefit}/>
+                    <BenefitItem key={index} benefit={benefit}/>
                 );
             })}
-        </section>
+        </ul>
     );
 }
 

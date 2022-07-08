@@ -15,10 +15,10 @@ const OpportunityTable = () => {
             <table id="opportunity-table">
                 <thead>
                 <tr id='header-row'>
-                    <th>Role</th>
-                    <th>Application Period</th>
+                    <th className="all-caps">Role</th>
+                    <th className="all-caps">Application Period</th>
                     <th className='last-column'>
-                        <p>Description</p>
+                        <p className="all-caps">Description</p>
                         {/*<button*/}
                         {/*    id='toggle-all-expand'*/}
                         {/*    onClick={handleAllExpanded}*/}

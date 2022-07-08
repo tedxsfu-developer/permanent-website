@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 
 const DefaultButton = (props) => {
-    const className = `button ${props.className}`;
+    const className = `button all-caps ${props.className}`;
     const button = props.isInternal
-        ? <Link to={props.link} className={className}>{props.label}</Link>
+        ? <Link to={props.link} className={className}>{props.label}{props.children && props.children}</Link>
         :
         <a className={className}
            href={props.link}
@@ -12,7 +12,7 @@ const DefaultButton = (props) => {
            {...(props.shouldOpenInNewTab && { target: "_blank" })}
            rel="noopener noreferrer"
         >
-            {props.label}
+            {props.label}{props.children && props.children}
         </a>;
     return button;
 };

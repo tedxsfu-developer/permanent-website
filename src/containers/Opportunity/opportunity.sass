@@ -1,10 +1,12 @@
+@import "./src/styles/assets"
+
 main#opportunity
   h1, h2
     margin-top: 4rem
 
   h2.inline, h2.inline + a
     display: inline-block
-    font-size: 1.2rem
+    font-size: $default-font-size * 1.2
     font-weight: normal
     vertical-align: baseline
 
@@ -23,5 +25,19 @@ table#opportunity-table
 
 @media only screen and (min-width: 48rem)
   main#opportunity
-    margin: 0 auto 16rem
+    margin: 0 auto 12rem
     width: max-content
+
+@media only screen and (min-width: 80rem) and (orientation: landscape)
+  $default-font-size: 1.2rem
+
+  main#opportunity
+    h2.inline, h2.inline + a
+      font-size: $default-font-size * 1.2
+
+@media only screen and (min-width: 80rem) and (orientation: portrait)
+  $default-font-size: 2rem
+
+  main#opportunity
+    h2.inline, h2.inline + a
+      font-size: $default-font-size * 1.2

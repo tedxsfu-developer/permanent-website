@@ -10,10 +10,12 @@ import PageLayout from "../../components/PageLayout/PageLayout";
 const OpportunityPage = () => {
     const REM_UNIT = 16; //1rem = 16px
 
-    let willDisplayTable = false;
+    let isDesktop = false;
     if (typeof window !== "undefined") {
         let viewportWidth = window.innerWidth;
-        willDisplayTable = viewportWidth >= 75 * REM_UNIT;
+        let viewportHeight = window.innerHeight;
+        let isLandscape = viewportWidth > viewportHeight;
+        isDesktop = isLandscape && viewportWidth >= 64 * REM_UNIT;
     }
 
     return (
@@ -26,11 +28,11 @@ const OpportunityPage = () => {
             <PageLayout>
                 <main id='opportunity' className='horizontally-centered'>
                     <SimpleDivAnimation>
-                        <h1>Be a part of TEDxSFU 2022</h1>
+                        <h1 className="page-title">{PageHelmets.opportunity.pageTitle}</h1>
                     </SimpleDivAnimation>
 
-                    {willDisplayTable && <OpportunityTable/>}
-                    {!willDisplayTable && <OpportunityTableMobile/>}
+                    {isDesktop && <OpportunityTable/>}
+                    {!isDesktop && <OpportunityTableMobile/>}
 
                     <h2 className='inline'>Want to partner with us?</h2>
                     <SimpleTextLink link="/partner" isInternal={true}>

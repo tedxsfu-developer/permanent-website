@@ -25,23 +25,23 @@ const PartnerWithUsPage = () => {
             <PageLayout>
                 <SimpleDivAnimation>
                     <main id='partner-with-us' className='horizontally-centered'>
-                        <h1>{PartnerWithUs.overview.title}</h1>
+                        <h1 className="page-title">{PartnerWithUs.overview.title}</h1>
 
                         <section id="overview" className='partner-info first-item'>
-                            {overviewParagraphs.map(paragraph => <p>{paragraph}</p>)}
+                            {overviewParagraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                         </section>
 
                         <section id="past-sponsors" className='partner-info'>
-                            <h2>{PartnerWithUs.pastSponsors.title}</h2>
+                            <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>
                         </section>
 
                         <section id="our-audience" className='partner-info'>
-                            <h2>{PartnerWithUs.audience.title}</h2>
+                            <h2 className="all-caps">{PartnerWithUs.audience.title}</h2>
                             <p>{PartnerWithUs.audience.content}</p>
                         </section>
 
                         <section id="partnership-benefits" className='partner-info'>
-                            <h2>{PartnerWithUs.partnershipBenefits.title}</h2>
+                            <h2 className="all-caps">{PartnerWithUs.partnershipBenefits.title}</h2>
                             <p>{PartnerWithUs.partnershipBenefits.content}</p>
                             <PartnershipBenefitsTable/>
                             <p>{PartnerWithUs.closing.content}</p>

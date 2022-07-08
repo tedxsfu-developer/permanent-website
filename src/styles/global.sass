@@ -9,14 +9,75 @@ body
   background-color: black
   color: white
   font-family: $main-font
-  font-size: $default-font-size
+
+  p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
+    font-size: $default-font-size
+    max-width: $paragraph-max-width
 
 main
   max-width: $max-content-width
 
-  p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
-    max-width: $paragraph-max-width
+.all-caps
+  text-transform: uppercase
+  font-size: $default-font-size * 0.75
+  letter-spacing: $default-letter-spacing
+  font-weight: 600
+
+h1.page-title
+  font-weight: 600
 
 .horizontally-centered
   margin: 0 auto
 
+img.filter-white
+  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(350deg) brightness(104%) contrast(101%)
+
+@media only screen and (min-width: 20rem)
+  h1.page-title
+    font-size: $default-font-size * 1.5
+
+@media only screen and (min-width: 48rem)
+  h1.page-title
+    font-size: $default-font-size * 2
+
+@media only screen and (min-width: 80rem) and (orientation: landscape)
+  $default-font-size: 1.2rem
+  $max-content-width: 100rem
+  $paragraph-max-width: 60rem
+  $default-letter-spacing: 0.075rem
+
+  body
+    p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
+      font-size: $default-font-size
+      max-width: $paragraph-max-width
+
+  h1.page-title
+    font-size: $default-font-size * 2
+
+  .all-caps
+    font-size: $default-font-size * 0.75
+    letter-spacing: $default-letter-spacing
+
+  main
+    max-width: $max-content-width
+
+@media only screen and (min-width: 80rem) and (orientation: portrait)
+  $default-font-size: 2rem
+  $max-content-width: 100rem
+  $paragraph-max-width: 60rem
+  $default-letter-spacing: 0.075rem
+
+  body
+    p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
+      font-size: $default-font-size
+      max-width: $paragraph-max-width
+
+  h1.page-title
+    font-size: $default-font-size * 2
+
+  .all-caps
+    font-size: $default-font-size * 0.75
+    letter-spacing: $default-letter-spacing
+
+  main
+    max-width: $max-content-width

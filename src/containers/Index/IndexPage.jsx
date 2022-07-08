@@ -6,6 +6,9 @@ import SimpleTextLink from "../../components/SimpleTextLink/SimpleTextLink";
 import PageHelmets from "../../content/pageHelmets";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
+import arrow_right from "../../images/arrow_forward.svg";
+import arrow_down from "../../images/arrow_downward.svg";
+
 const IndexPage = () => {
     return (
         <React.Fragment>
@@ -17,7 +20,7 @@ const IndexPage = () => {
                 <main id='home' className="horizontally-centered">
                     <section id="coming-soon" className='home-section'>
                         <SimpleDivAnimation>
-                            <h1 className="main-heading font-bold main-font">
+                            <h1 className="page-title">
                                 The TEDxSFU team is working hard putting together this year’s conference—details coming
                                 in
                                 August 2022.
@@ -25,7 +28,9 @@ const IndexPage = () => {
                         </SimpleDivAnimation>
                         <SimpleDivAnimation>
                             <SimpleTextLink link="#about-tedx" isInternal={true}>
-                                What is TEDx? &darr;
+                                What is TEDx?
+                                <img src={arrow_down} alt="Read more about What is TEDx" width="16" height="16"
+                                     className="filter-white"/>
                             </SimpleTextLink>
                         </SimpleDivAnimation>
                     </section>
@@ -41,7 +46,9 @@ const IndexPage = () => {
                         </p>
                         <SimpleTextLink link="https://www.ted.com/tedx"
                                         isInternal={false}>
-                            Link to TEDx Program ->
+                            Link to TEDx Program
+                            <img src={arrow_right} alt="Go to TEDx Program on TED website" width="16" height="16"
+                                 className="filter-white"/>
                         </SimpleTextLink>
                     </section>
                 </main>

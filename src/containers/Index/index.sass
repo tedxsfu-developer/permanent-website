@@ -3,7 +3,7 @@
 section.home-section
   a
     display: block
-    margin-top: 2rem
+    margin-top: 1rem
 
 section#coming-soon, section#about-tedx
   margin-top: 0
@@ -11,21 +11,56 @@ section#coming-soon, section#about-tedx
   flex-direction: column
   justify-content: center
 
-@media only screen and (min-width: 20rem)
+a.simple-link img
+  vertical-align: text-bottom
+
+@media only screen and (max-height: 36rem) and (orientation: landscape)
+  main#home
+    margin: 0 auto
+    width: max-content
+
+    a.simple-link, h2
+      font-size: $default-font-size
+
+    h2
+      margin-bottom: 1rem
+
+  section#coming-soon
+    margin-top: 6rem
+
+  section#about-tedx
+    margin: 50vh 0
+    padding-top: 4rem
+
+@media only screen and (min-width: 20rem) and (min-height: 36rem)
   main#home
     margin: 0 2rem
+
+    a.simple-link, h2
+      font-size: $default-font-size
+
+    h2
+      margin-bottom: 1rem
 
   section#coming-soon
     height: calc(100vh - 9.5rem)
 
   section#about-tedx
-    margin-top: 4.5rem
-    height: calc(100vh - 4.5rem)
+    margin: 0
+    padding-top: 4.5rem
+//height: calc(100vh - 4.5rem)
 
-@media only screen and (min-width: 48rem)
+@media only screen and (min-width: 48rem) and (min-height: 36rem)
   main#home
     margin: 0 auto
     width: max-content
+
+    a.simple-link, h2
+      font-size: $default-font-size * 1.2
+
+    a.simple-link img
+      width: $default-font-size * 1.2
+      height: $default-font-size * 1.2
 
   section#coming-soon
     height: calc(100vh - 84px - 3rem - 6.5rem)
@@ -33,3 +68,23 @@ section#coming-soon, section#about-tedx
   section#about-tedx
     height: calc(100vh - 8.5rem)
     margin-bottom: 8.5rem
+
+@media only screen and (min-width: 80rem) and (orientation: landscape)
+  $default-font-size: 1.2rem
+  main#home
+    a.simple-link, h2
+      font-size: $default-font-size * 1.2
+
+    a.simple-link img
+      width: $default-font-size * 1.2
+      height: $default-font-size * 1.2
+
+@media only screen and (min-width: 80rem) and (orientation: portrait) and (min-height: 36rem)
+  $default-font-size: 2rem
+  main#home
+    a.simple-link, h2
+      font-size: $default-font-size * 1.2
+
+    a.simple-link img
+      width: $default-font-size * 1.2
+      height: $default-font-size * 1.2

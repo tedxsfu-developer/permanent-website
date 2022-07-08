@@ -23,6 +23,14 @@ const Opportunities = [
         status: "closed",
         application_link: "https://docs.google.com/forms/d/e/1FAIpQLSfarTL1UiiLmsOpBbjcGPVvTim3pXCRKtpCW_nNb6uklY9f4Q/viewform",
     },
+    {
+        id: "mc",
+        role: "Master of Ceremonies (MC)",
+        application_period: "TBA",
+        description: "Are you a strong public speaker? Do you have the energy to engage a large audience? Are you able to coordinate under time pressure? Then you may be a great fit to be our MC for this year’s TEDxSFU conference year!\nAs a TEDxSFU MC, you will be working closely with the TEDxSFU Content Development Team, Events Team, Speaker Coaches, and our Project Leads. Your primary responsibility is to structure and moderate our TEDxSFU Conference.\nThe TEDxSFU team is currently working on a rough skeleton of the conference flow. We understand that some MCs prefer to write and/or tweak their own script and not restrain themselves strictly to a word-for-word provided script and some prefer to refer to main talking points (bullet points) instead. In either case, we will gladly work with what you're comfortable with.",
+        status: "upcoming",
+        application_link: "https://google.com",
+    },
 ];
 
 export default Opportunities;

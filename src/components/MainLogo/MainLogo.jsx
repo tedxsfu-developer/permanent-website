@@ -5,7 +5,7 @@ const MainLogo = () => {
     return (
         <Link to="/">
             <img
-                className="site-logo"
+                id="site-logo"
                 src="/images/logo.png"
                 alt="TEDxSFU logo"
             />

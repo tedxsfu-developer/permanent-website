@@ -1,6 +1,9 @@
+footer
+  background: rgba(0, 0, 0, 0.6)
+
 @media only screen and (min-width: 20rem)
   footer
-    margin: 8rem 2rem 4.5rem 2rem
+    margin: 6rem 2rem 4.5rem 2rem
     display: flex
     flex-direction: column
     padding-bottom: 2rem
@@ -16,11 +19,20 @@
     justify-content: space-between
     padding: 1rem 2rem 3rem 2rem
     align-items: center
+    //position: fixed
+    //bottom: 0
+    //left: 0
+    //right: 0
+    #social-media
+      margin-right: 10rem
+
+    p#license
+      margin-top: 0
+      align-self: end
+
+@media only screen and (min-height: 40rem) and (orientation: landscape)
+  footer
     position: fixed
     bottom: 0
     left: 0
     right: 0
-    background: rgba(0, 0, 0, 0.6)
-
-    p#license
-      align-self: end

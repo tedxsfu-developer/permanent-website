@@ -1,10 +1,9 @@
+@import "./src/styles/assets"
+
 table#opportunity-table, div#opportunity
   .opportunity-description
     display: flex
     flex-direction: row
-
-    .description-text
-      max-width: 30rem
 
     p
       vertical-align: baseline
@@ -13,7 +12,7 @@ table#opportunity-table, div#opportunity
       margin-top: 1rem
 
   .opportunity-description + button, .opportunity-description + .button
-    margin-top: 1rem
+    margin-top: 2rem
 
   .opportunity-description.collapsed
     max-height: 8rem
@@ -25,8 +24,12 @@ table#opportunity-table, div#opportunity
 
     img
       filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(350deg) brightness(104%) contrast(101%)
-      width: 2rem
-      height: 2rem
+      width: $default-font-size * 2
+      height: $default-font-size * 2
+
+table#opportunity-table
+  .description-text
+    max-width: 30rem
 
 @media only screen and (min-width: 20rem)
   div#opportunity
@@ -39,20 +42,22 @@ table#opportunity-table, div#opportunity
 
       h2
         margin-top: 0
-        font-size: 1.2rem
+        font-size: $default-font-size * 1.2
+        font-weight: 600
 
       h3
-        font-size: 1rem
-        text-transform: uppercase
         margin-bottom: 0.5rem
 
       .opportunity-details
-        margin: 2rem 0
+        margin: 2.5rem 0
 
         .flex.space-between
           display: flex
           flex-direction: row
           justify-content: space-between
+
+        button.toggle
+          width: max-content
 
       button, .button
         width: 100%
@@ -85,9 +90,25 @@ table#opportunity-table, div#opportunity
       padding-right: 0
 
     th
-      font-size: 1rem
-      text-transform: uppercase
       text-align: left
 
     td.opportunity-role
-      font-size: 1.2rem
+      font-size: $default-font-size * 1.2
+
+@media only screen and (min-width: 80rem) and (orientation: portrait)
+  $default-font-size: 2rem
+
+  table#opportunity-table, div#opportunity
+    button.toggle.icon-button
+      img
+        width: $default-font-size * 2
+        height: $default-font-size * 2
+
+  div#opportunity
+    section.opportunity-info
+      h2
+        font-size: $default-font-size * 1.2
+
+  table#opportunity-table
+    td.opportunity-role
+      font-size: $default-font-size * 1.2

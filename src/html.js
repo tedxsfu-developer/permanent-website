@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import black_logo from "./images/black_logo.png";
-
 export default function HTML(props) {
     return (
         <html lang="en">
@@ -16,7 +14,7 @@ export default function HTML(props) {
             {props.headComponents}
             <link rel="icon"
                   type="image/png"
-                  href={black_logo}/>
+                  href="/images/black_logo.png"/>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
             <link

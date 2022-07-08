@@ -6,7 +6,7 @@ const Footer = (props) => {
     return (
         <footer>
             <SimpleDivAnimation>
-                <section className="social-media">
+                <section id="social-media">
                     <SimpleSectionAnimation>
                         <p className="main-font">Stay up to date</p>
                         <SocialMedia/>
