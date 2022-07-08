@@ -1,0 +1,41 @@
+@import "./src/styles/assets"
+
+.button, button
+  font-size: 1rem
+  color: white
+  padding: 0.5rem
+  text-transform: uppercase
+  font-weight: 600
+  display: block
+  width: fit-content
+
+  img
+    vertical-align: text-top
+    margin-right: 0.25rem
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(350deg) brightness(104%) contrast(101%)
+
+  span.no-show
+    display: none
+
+a.button
+  text-decoration: none
+
+button.default, .button.default
+  color: white
+  background-color: transparent
+  border: solid 0.1rem white
+  border-radius: 0.25rem
+
+button.cta, .button.cta
+  color: white
+  background-color: $ted-red
+  border-radius: 0.25rem
+
+button.no-border, .button.no-border
+  border: none
+  background-color: transparent
+  border-radius: 0.25rem
+
+button.disabled, .button.disabled
+  opacity: 50%
+  cursor: not-allowed

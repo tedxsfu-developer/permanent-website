@@ -1,0 +1,93 @@
+table#opportunity-table, div#opportunity
+  .opportunity-description
+    display: flex
+    flex-direction: row
+
+    .description-text
+      max-width: 30rem
+
+    p
+      vertical-align: baseline
+
+    p:not(.first-item)
+      margin-top: 1rem
+
+  .opportunity-description + button, .opportunity-description + .button
+    margin-top: 1rem
+
+  .opportunity-description.collapsed
+    max-height: 8rem
+    overflow: hidden
+
+  button.toggle.icon-button
+    align-self: start
+    padding: 0 0 0 0.5rem
+
+    img
+      filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(350deg) brightness(104%) contrast(101%)
+      width: 2rem
+      height: 2rem
+
+@media only screen and (min-width: 20rem)
+  div#opportunity
+    h1
+      margin-bottom: 4rem
+
+    section.opportunity-info
+      border-top: 0.1rem solid white
+      padding: 2rem 0
+
+      h2
+        margin-top: 0
+        font-size: 1.2rem
+
+      h3
+        font-size: 1rem
+        text-transform: uppercase
+        margin-bottom: 0.5rem
+
+      .opportunity-details
+        margin: 2rem 0
+
+        .flex.space-between
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+
+      button, .button
+        width: 100%
+
+@media only screen and (min-width: 48rem)
+  table#opportunity-table
+    border-collapse: collapse
+
+    tr
+      border-bottom: 0.1rem solid white
+
+    tr#header-row th
+      padding-bottom: 0.5rem
+
+    tr#header-row th.last-column
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      button#toggle-all-expand
+        background: transparent
+        border: none
+        padding: 0
+
+    th, td
+      padding: 1rem 2rem 1rem 0
+      vertical-align: baseline
+
+    th.last-column, td.last-column
+      padding-right: 0
+
+    th
+      font-size: 1rem
+      text-transform: uppercase
+      text-align: left
+
+    td.opportunity-role
+      font-size: 1.2rem

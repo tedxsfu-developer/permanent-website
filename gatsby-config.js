@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `TEDxSFU Permanent Website`,
+    title: `TEDxSFU`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
