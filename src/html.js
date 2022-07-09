@@ -22,13 +22,15 @@ export default function HTML(props) {
                 rel="stylesheet"/>
         </head>
         <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
-        <div
-            key={`body`}
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
+        <React.StrictMode>
+            {props.preBodyComponents}
+            <div
+                key={`body`}
+                id="___gatsby"
+                dangerouslySetInnerHTML={{ __html: props.body }}
+            />
+            {props.postBodyComponents}
+        </React.StrictMode>
         </body>
         </html>
     )

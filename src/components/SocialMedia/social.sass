@@ -5,6 +5,7 @@
 
 .social-group
   margin-top: 1rem
+  width: max-content
 
   a
     margin-right: 0.5rem
@@ -21,6 +22,9 @@
     outline: solid $ted-red .25rem
     outline-offset: .25rem
 
+@media only screen and (max-width: 20rem)
+  #social-media
+    margin: 2rem 0
 
 @media only screen and (min-width: 80rem) and (orientation: landscape)
   $default-font-size: 1.2rem

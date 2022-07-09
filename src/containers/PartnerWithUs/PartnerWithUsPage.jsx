@@ -29,9 +29,9 @@ const PartnerWithUsPage = () => {
                         {overviewParagraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                     </section>
 
-                    <section id="past-sponsors" className='partner-info'>
-                        <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>
-                    </section>
+                    {/*<section id="past-sponsors" className='partner-info'>*/}
+                    {/*    <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>*/}
+                    {/*</section>*/}
 
                     <section id="our-audience" className='partner-info'>
                         <h2 className="all-caps">{PartnerWithUs.audience.title}</h2>

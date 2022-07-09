@@ -35,7 +35,7 @@ const DescriptionSection = (props) => {
         />;
 
     return (
-        <section key={props.opportunity.id} className={`opportunity-info ${props.className}`}>
+        <section key={props.opportunity.id} className={`opportunity-info ${props.className ? props.className : ''}`}>
             <h2>{props.opportunity.role}</h2>
             <div className='opportunity-details'>
                 <h3 className="all-caps">Application Period</h3>

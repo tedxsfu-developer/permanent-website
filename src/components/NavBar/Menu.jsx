@@ -8,7 +8,7 @@ const Menu = (props) => {
                     imgSrc={hamburger_menu}
                     alt="menu"
                     label='Menu'
-                    className={`no-border ${props.className}`}
+                    className={`no-border fade-slide-in ${props.className}`}
                     noShow={false}/>
     );
 };
