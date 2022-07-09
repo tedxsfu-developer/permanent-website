@@ -9,12 +9,12 @@ const MobileNav = (props) => {
             <DefaultButton link="/opportunity"
                            label="Opportunities"
                            isInternal={true}
-                           className='transparent'
+                           className='transparent fade-slide-in'
             >
                 <img src={arrow_right} alt="Check out opportunities with TEDxSFU" width="16" height="16"
                      className="filter-white"/>
             </DefaultButton>
-            <Menu/>
+            <Menu className='fade-slide-in'/>
         </div>
     );
 };

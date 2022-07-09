@@ -4,7 +4,12 @@ import IconButton from "../Buttons/IconButton";
 
 const Menu = (props) => {
     return (
-        <IconButton id="menu" imgSrc={hamburger_menu} alt="menu" label='Menu' className='no-border' noShow={false}/>
+        <IconButton id="menu"
+                    imgSrc={hamburger_menu}
+                    alt="menu"
+                    label='Menu'
+                    className={`no-border ${props.className}`}
+                    noShow={false}/>
     );
 };
 

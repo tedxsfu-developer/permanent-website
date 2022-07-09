@@ -5,7 +5,6 @@ import PageHelmets from "../../content/pageHelmets";
 import PartnerWithUs from "../../content/partnerWithUs";
 import CtaButton from "../../components/Buttons/CtaButton";
 import PartnershipBenefitsTable from "../../components/PartnershipBenefitsTable/PartnershipBenefitsTable";
-import { SimpleDivAnimation } from "../../animation/SimpleTransitionAnimation";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
 const PartnerWithUsPage = () => {
@@ -23,37 +22,35 @@ const PartnerWithUsPage = () => {
                 description={PageHelmets.partner.description}
             />
             <PageLayout>
-                <SimpleDivAnimation>
-                    <main id='partner-with-us' className='horizontally-centered'>
-                        <h1 className="page-title">{PartnerWithUs.overview.title}</h1>
+                <main id='partner-with-us' className='horizontally-centered fade-slide-in'>
+                    <h1 className="page-title">{PartnerWithUs.overview.title}</h1>
 
-                        <section id="overview" className='partner-info first-item'>
-                            {overviewParagraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-                        </section>
+                    <section id="overview" className='partner-info first-item'>
+                        {overviewParagraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+                    </section>
 
-                        <section id="past-sponsors" className='partner-info'>
-                            <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>
-                        </section>
+                    <section id="past-sponsors" className='partner-info'>
+                        <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>
+                    </section>
 
-                        <section id="our-audience" className='partner-info'>
-                            <h2 className="all-caps">{PartnerWithUs.audience.title}</h2>
-                            <p>{PartnerWithUs.audience.content}</p>
-                        </section>
+                    <section id="our-audience" className='partner-info'>
+                        <h2 className="all-caps">{PartnerWithUs.audience.title}</h2>
+                        <p>{PartnerWithUs.audience.content}</p>
+                    </section>
 
-                        <section id="partnership-benefits" className='partner-info'>
-                            <h2 className="all-caps">{PartnerWithUs.partnershipBenefits.title}</h2>
-                            <p>{PartnerWithUs.partnershipBenefits.content}</p>
-                            <PartnershipBenefitsTable/>
-                            <p>{PartnerWithUs.closing.content}</p>
-                        </section>
-                        <CtaButton link="mailto:partner@tedxsfu.com"
-                                   label="Let's connect"
-                                   id="contact-pr"
-                                   isInternal={false}
-                                   shouldOpenInNewTab={false}
-                        />
-                    </main>
-                </SimpleDivAnimation>
+                    <section id="partnership-benefits" className='partner-info'>
+                        <h2 className="all-caps">{PartnerWithUs.partnershipBenefits.title}</h2>
+                        <p>{PartnerWithUs.partnershipBenefits.content}</p>
+                        <PartnershipBenefitsTable/>
+                        <p>{PartnerWithUs.closing.content}</p>
+                    </section>
+                    <CtaButton link="mailto:partner@tedxsfu.com"
+                               label="Let's connect"
+                               id="contact-pr"
+                               isInternal={false}
+                               shouldOpenInNewTab={false}
+                    />
+                </main>
             </PageLayout>
         </React.Fragment>
     );

@@ -1,6 +1,6 @@
 @import "./src/styles/assets"
 
-table#opportunity-table, div#opportunity
+table#opportunity-table, div#opportunity-table
   .opportunity-description
     display: flex
     flex-direction: row
@@ -32,7 +32,7 @@ table#opportunity-table
     max-width: 30rem
 
 @media only screen and (min-width: 20rem)
-  div#opportunity
+  div#opportunity-table
     h1
       margin-bottom: 4rem
 
@@ -98,13 +98,13 @@ table#opportunity-table
 @media only screen and (min-width: 80rem) and (orientation: portrait)
   $default-font-size: 2rem
 
-  table#opportunity-table, div#opportunity
+  table#opportunity-table, div#opportunity-table
     button.toggle.icon-button
       img
         width: $default-font-size * 2
         height: $default-font-size * 2
 
-  div#opportunity
+  div#opportunity-table
     section.opportunity-info
       h2
         font-size: $default-font-size * 1.2

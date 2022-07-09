@@ -1,30 +1,24 @@
 import * as React from "react";
 import DesktopNav from "../NavBar/DesktopNav";
 import MainLogo from "../MainLogo/MainLogo";
-import { SimpleDivAnimation } from "../../animation/SimpleTransitionAnimation";
 
 const Header = (props) => {
     const REM_UNIT = 16; //1rem = 16px
 
     if (typeof window !== "undefined") {
         let viewportWidth = window.innerWidth;
-        let header;
+        let headerChildren;
         if (viewportWidth >= 48 * REM_UNIT) {
-            header =
-                <SimpleDivAnimation>
-                    <header>
-                        <MainLogo/>
-                        <DesktopNav/>
-                    </header>
-                </SimpleDivAnimation>;
+            headerChildren =
+                <React.Fragment>
+                    <MainLogo/>
+                    <DesktopNav/>
+                </React.Fragment>
         } else {
-            header =
-                <SimpleDivAnimation>
-                    <header>
-                        <MainLogo/>
-                    </header>
-                </SimpleDivAnimation>;
+            headerChildren =
+                <MainLogo/>
         }
+        const header = <header className='fade-slide-in'>{headerChildren}</header>;
         return header;
     }
 };

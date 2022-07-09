@@ -1,6 +1,5 @@
 import * as React from "react";
 import PageHelmet from "../../components/PageHelmet";
-import { SimpleDivAnimation } from "../../animation/SimpleTransitionAnimation";
 import SimpleTextLink from "../../components/SimpleTextLink/SimpleTextLink";
 
 import PageHelmets from "../../content/pageHelmets";
@@ -17,22 +16,18 @@ const IndexPage = () => {
                 canonical={PageHelmets.home.canonical}
                 description={PageHelmets.home.description}/>
             <PageLayout>
-                <main id='home' className="horizontally-centered">
+                <main id='home' className="horizontally-centered fade-slide-in">
                     <section id="coming-soon" className='home-section'>
-                        <SimpleDivAnimation>
-                            <h1 className="page-title">
-                                The TEDxSFU team is working hard putting together this year’s conference—details coming
-                                in
-                                August 2022.
-                            </h1>
-                        </SimpleDivAnimation>
-                        <SimpleDivAnimation>
-                            <SimpleTextLink link="#about-tedx" isInternal={true}>
-                                What is TEDx?
-                                <img src={arrow_down} alt="Read more about What is TEDx" width="16" height="16"
-                                     className="filter-white"/>
-                            </SimpleTextLink>
-                        </SimpleDivAnimation>
+                        <h1 className="page-title">
+                            The TEDxSFU team is working hard putting together this year’s conference—details coming
+                            in
+                            August 2022.
+                        </h1>
+                        <SimpleTextLink link="#about-tedx" isInternal={true}>
+                            What is TEDx?
+                            <img src={arrow_down} alt="Read more about What is TEDx" width="16" height="16"
+                                 className="filter-white"/>
+                        </SimpleTextLink>
                     </section>
                     <section id="about-tedx" className='home-section'>
                         <h2>What is TEDx?</h2>

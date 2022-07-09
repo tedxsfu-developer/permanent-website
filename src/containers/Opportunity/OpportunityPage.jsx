@@ -3,7 +3,6 @@ import PageHelmet from "../../components/PageHelmet";
 import OpportunityTable from "../../components/OpportunityTable/OpportunityTable";
 import SimpleTextLink from "../../components/SimpleTextLink/SimpleTextLink";
 import PageHelmets from "../../content/pageHelmets";
-import { SimpleDivAnimation } from "../../animation/SimpleTransitionAnimation";
 import OpportunityTableMobile from "../../components/OpportunityTable/OpportunityTableMobile";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
@@ -26,10 +25,8 @@ const OpportunityPage = () => {
                 description={PageHelmets.opportunity.description}
             />
             <PageLayout>
-                <main id='opportunity' className='horizontally-centered'>
-                    <SimpleDivAnimation>
-                        <h1 className="page-title">{PageHelmets.opportunity.pageTitle}</h1>
-                    </SimpleDivAnimation>
+                <main id='opportunity' className='horizontally-centered fade-slide-in'>
+                    <h1 className="page-title">{PageHelmets.opportunity.pageTitle}</h1>
 
                     {isDesktop && <OpportunityTable/>}
                     {!isDesktop && <OpportunityTableMobile/>}

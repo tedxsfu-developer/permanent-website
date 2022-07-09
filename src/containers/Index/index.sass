@@ -14,10 +14,9 @@ section#coming-soon, section#about-tedx
 a.simple-link img
   vertical-align: text-bottom
 
-@media only screen and (max-height: 36rem) and (orientation: landscape)
+@media only screen and (max-height: 36rem)
   main#home
-    margin: 0 auto
-    width: max-content
+    padding: 0 2rem
 
     a.simple-link, h2
       font-size: $default-font-size
@@ -32,9 +31,14 @@ a.simple-link img
     margin: 50vh 0
     padding-top: 4rem
 
+  @media (min-width: 48rem)
+    main#home
+      margin: 0 auto
+      width: max-content
+
 @media only screen and (min-width: 20rem) and (min-height: 36rem)
   main#home
-    margin: 0 2rem
+    padding: 0 2rem
 
     a.simple-link, h2
       font-size: $default-font-size
@@ -48,7 +52,6 @@ a.simple-link img
   section#about-tedx
     margin: 0
     padding-top: 4.5rem
-//height: calc(100vh - 4.5rem)
 
 @media only screen and (min-width: 48rem) and (min-height: 36rem)
   main#home
