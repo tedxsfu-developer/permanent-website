@@ -1,5 +1,8 @@
+@import "./src/styles/assets"
+
 footer
-  background: rgba(0, 0, 0, 0.6)
+  p#license
+    font-size: $default-font-size * 0.75
 
 @media only screen and (max-width: 20rem)
   footer
@@ -31,3 +34,18 @@ footer
     p#license
       margin-top: 0
       align-self: end
+
+
+@media only screen and (min-width: 80rem) and (orientation: landscape)
+  $default-font-size: 1.2rem
+
+  footer
+    p#license
+      font-size: $default-font-size * 0.75
+
+@media only screen and (min-width: 80rem) and (orientation: portrait)
+  $default-font-size: 2rem
+
+  footer
+    p#license
+      font-size: $default-font-size * 0.75

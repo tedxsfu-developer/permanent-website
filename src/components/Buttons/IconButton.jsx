@@ -8,6 +8,7 @@ const IconButton = (props) => {
                  alt={alt}
                  width="16"
                  height="16"
+                 className='filter-white'
             />
             <span className='all-caps' {...(noShow && { className: 'no-show' })}>{label}</span>
         </button>

@@ -12,6 +12,9 @@ const SocialMediaLink = () => {
                     href={item.url}
                     src={item.logo}
                     alt={item.name}
+                    className='filter-white'
+                    width={item.width}
+                    height={item.height}
                 />
             )}
         </div>
