@@ -17,6 +17,10 @@ const PartnerWithUs = {
     },
     closing: {
         content: 'Everything we do is custom, and we’re excited to hear about your goals and how we can help you achieve them.'
+    },
+    contact: {
+        content: "For general information or further inquiries on how you can participate as a partner for our 12th annual TEDxSFU conference, please contact",
+        contact_email: "partner@tedxsfu.com",
     }
 }
 export default PartnerWithUs

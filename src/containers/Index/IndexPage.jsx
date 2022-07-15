@@ -40,7 +40,9 @@ const IndexPage = () => {
                             program, but individual TEDx events, including ours, are self-organized.
                         </p>
                         <SimpleTextLink link="https://www.ted.com/tedx"
-                                        isInternal={false}>
+                                        isInternal={false}
+                                        shouldOpenInNewTab={true}
+                        >
                             Link to TEDx Program
                             <img src={arrow_right} alt="Go to TEDx Program on TED website" width="16" height="16"
                                  className="filter-white"/>

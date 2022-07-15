@@ -5,8 +5,9 @@ import DisabledButton from "../Buttons/DisabledButton";
 import arrow_drop_down from "../../images/arrow_drop_down.svg";
 import arrow_drop_up from "../../images/arrow_drop_up.svg";
 import IconButton from "../Buttons/IconButton";
+import DescriptionText from "./DescriptionText";
 
-const OpportunityTable = (props) => {
+const OpportunityTable = ({ opportunity }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     const handleDescriptionClick = () => {
         setIsExpanded(!isExpanded);
@@ -17,7 +18,7 @@ const OpportunityTable = (props) => {
             alt="Expand description of this opportunity"
             label="Expand"
             aria-expanded="false"
-            aria-controls={props.opportunity.id}
+            aria-controls={opportunity.id}
             className="no-border toggle icon-button"
             noShow={true}
         />;
@@ -28,14 +29,14 @@ const OpportunityTable = (props) => {
             alt="Collapse description of this opportunity"
             label="Collapse"
             aria-expanded="true"
-            aria-controls={props.opportunity.id}
+            aria-controls={opportunity.id}
             className="no-border toggle icon-button"
             noShow={true}
         />;
 
     return (
         <React.Fragment>
-            <div id={props.opportunity.id}
+            <div id={opportunity.id}
                  className={`opportunity-description ${isExpanded ? "expanded" : "collapsed"}`}
                  role="button"
                  tabIndex={-1}
@@ -43,33 +44,25 @@ const OpportunityTable = (props) => {
                  onKeyDown={handleDescriptionClick}
             >
                 <div className="description-text">
-                    {props.opportunity.description.split("\n").map((paragraph, index) => {
-                        if (index === 0) {
-                            return <p key={index} className='first-item'>{paragraph}</p>;
-                        } else {
-                            return <p key={index}>{paragraph}</p>;
-                        }
-                    })}
+                    <DescriptionText opportunity={opportunity}/>
                 </div>
                 {isExpanded ? dropUpButton : dropDownButton}
             </div>
 
-            {props.opportunity.status === "open" &&
+            {opportunity.status === "open" &&
                 <DefaultButton
-                    link={props.opportunity.application_link}
+                    link={opportunity.application_link}
                     label="Click Here To Apply"
                     isInternal={false}
                     className='transparent'
                     shouldOpenInNewTab={true}
                 />}
-            {props.opportunity.status === "closed" &&
+            {opportunity.status === "closed" &&
                 <DisabledButton
-                    link="https://google.com"
                     label="Application Closed"
                 />}
-            {props.opportunity.status === "upcoming" &&
+            {opportunity.status === "upcoming" &&
                 <DisabledButton
-                    link="https://google.com"
                     label="Opening soon"
                 />}
         </React.Fragment>

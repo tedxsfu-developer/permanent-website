@@ -6,6 +6,7 @@ import PartnerWithUs from "../../content/partnerWithUs";
 import CtaButton from "../../components/Buttons/CtaButton";
 import PartnershipBenefitsTable from "../../components/PartnershipBenefitsTable/PartnershipBenefitsTable";
 import PageLayout from "../../components/PageLayout/PageLayout";
+import SimpleTextLink from "../../components/SimpleTextLink/SimpleTextLink";
 
 const PartnerWithUsPage = () => {
     const convertToParagraphList = (rawText) => {
@@ -44,12 +45,24 @@ const PartnerWithUsPage = () => {
                         <PartnershipBenefitsTable/>
                         <p>{PartnerWithUs.closing.content}</p>
                     </section>
-                    <CtaButton link="mailto:partner@tedxsfu.com"
-                               label="Let's connect"
-                               id="contact-pr"
-                               isInternal={false}
-                               shouldOpenInNewTab={false}
-                    />
+
+                    <section id="contact" className='partner-info'>
+                        <p>
+                            {PartnerWithUs.contact.content} <SimpleTextLink
+                            link={`mailto:${PartnerWithUs.contact.contact_email}`}
+                            isInternal={false}
+                            shouldOpenInNewTab={false}
+                        >
+                            {PartnerWithUs.contact.contact_email}
+                        </SimpleTextLink>
+                        </p>
+                        <CtaButton link={`mailto:${PartnerWithUs.contact.contact_email}`}
+                                   label="Let's connect"
+                                   id="contact-pr"
+                                   isInternal={false}
+                                   shouldOpenInNewTab={false}
+                        />
+                    </section>
                 </main>
             </PageLayout>
         </React.Fragment>

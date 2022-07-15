@@ -13,6 +13,17 @@ section.partner-info
 section.partner-info.first-item
   margin-top: 0
 
+section#contact
+  a.simple-link
+    color: $ted-red
+
+  a.simple-link:hover
+    color: white
+
+  a.simple-link:focus-visible
+    outline: solid $ted-red .1rem
+    outline-offset: .2rem
+
 a#contact-pr
   margin-top: 2rem
   width: 100%
@@ -30,7 +41,7 @@ a#contact-pr
     border-bottom: 0.1rem solid white
     padding: 4rem 0
 
-  section.partner-info.first-item
+  section.partner-info.first-item, section.partner-info#contact
     padding-top: 0
 
   section#partnership-benefits

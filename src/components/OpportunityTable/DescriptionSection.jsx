@@ -4,6 +4,7 @@ import arrow_drop_down from "../../images/arrow_drop_down.svg";
 import arrow_drop_up from "../../images/arrow_drop_up.svg";
 import DefaultButton from "../Buttons/DefaultButton";
 import DisabledButton from "../Buttons/DisabledButton";
+import DescriptionText from "./DescriptionText";
 
 const DescriptionSection = (props) => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -54,13 +55,7 @@ const DescriptionSection = (props) => {
                      onKeyDown={handleDescriptionClick}
                 >
                     <div className="description-text">
-                        {props.opportunity.description.split("\n").map((paragraph, index) => {
-                            if (index === 0) {
-                                return <p key={index} className='first-item'>{paragraph}</p>;
-                            } else {
-                                return <p key={index}>{paragraph}</p>;
-                            }
-                        })}
+                        <DescriptionText opportunity={props.opportunity}/>
                     </div>
                 </div>
             </div>

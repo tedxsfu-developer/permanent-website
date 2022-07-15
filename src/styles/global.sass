@@ -13,6 +13,7 @@ body
   p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
     font-size: $default-font-size
     max-width: $paragraph-max-width
+    line-height: $default-line-height
 
 main
   max-width: $max-content-width
@@ -48,24 +49,29 @@ img.filter-white
 @media only screen and (min-width: 20rem)
   h1.page-title
     font-size: $default-font-size * 1.5
+    line-height: $default-line-height * 1.5
 
 @media only screen and (min-width: 48rem)
   h1.page-title
     font-size: $default-font-size * 2
+    line-height: $default-line-height * 2
 
-@media only screen and (min-width: 80rem) and (orientation: landscape)
+@media only screen and (min-width: 120rem) and (orientation: landscape)
   $default-font-size: 1.2rem
   $max-content-width: 100rem
   $paragraph-max-width: 60rem
   $default-letter-spacing: 0.075rem
+  $default-line-height: 1.5rem * 1.2
 
   body
     p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
       font-size: $default-font-size
       max-width: $paragraph-max-width
+      line-height: $default-line-height
 
   h1.page-title
     font-size: $default-font-size * 2
+    line-height: $default-line-height * 2
 
   .all-caps
     font-size: $default-font-size * 0.75
@@ -79,14 +85,17 @@ img.filter-white
   $max-content-width: 100rem
   $paragraph-max-width: 60rem
   $default-letter-spacing: 0.075rem
+  $default-line-height: 2.5rem
 
   body
     p, a, h1, h2, h3, h4, h5, h6, ol, ul, li
       font-size: $default-font-size
       max-width: $paragraph-max-width
+      line-height: $default-line-height
 
   h1.page-title
     font-size: $default-font-size * 2
+    line-height: $default-line-height * 2
 
   .all-caps
     font-size: $default-font-size * 0.75

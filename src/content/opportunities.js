@@ -3,15 +3,129 @@ const Opportunities = [
         id: "ga",
         role: "General Ambassador",
         application_period: "May 18-31, 2022",
-        description: "Always wanted to join TEDxSFU? You are in luck because we are hiring!\nWe are looking for General Ambassadors to volunteer with TEDxSFU and help us organize this year’s conference.\nThis is a great opportunity for students and recent alumni to gain valuable experience and be a part of the behind-the-scenes process.",
+        description: {
+            overview: {
+                title: "Who is a General Ambassador?",
+                content: "We are looking for 15 passionate individuals to help us host our annual TEDxSFU conference. The General Ambassadors play an integral role in the months leading up to the conference and day-of logistics. In this volunteer role, you will get an opportunity to help achieve the behind-the-scenes of the conference seamlessly all while working with the Project Leads, Organizing Committee, and other General Ambassadors.",
+                report_to: {
+                    title: "Reports to",
+                    content: "Director of Events",
+                },
+                time_commitment: {
+                    title: "Time Commitment",
+                    content: "July — November 2022 (Up to six hours per week). This position will be required to attend all TEDxSFU related meetings, events, dress rehearsals, and the actual conference day.",
+                },
+            },
+            responsibilities: {
+                title: "Responsibilities",
+                content: [
+                    "Provide overall support to the planning of the TEDxSFU conference",
+                    "Work alongside other General Ambassadors to create an inspiring guest experience",
+                    "Contribute innovative ideas on how to improve the conference experience",
+                    "Help promote the TEDxSFU conference at clubs day, during on-campus tabling, and in in-person and virtual lectures throughout year",
+                    "Assist in promoting the TEDxSFU Conference on social media",
+                    "Represent TEDxSFU and the TEDx brand in a professional manner",
+                    "Help execute conference-day operations in roles including Greeter, Registration Clerks, Activity Leads, BOH/AV Assistants, and Camera Assistants",
+                ]
+            },
+            skills_and_experiences: {
+                title: "Desired Skills and Experience",
+                content: [
+                    "Current SFU student or recent alumni that graduated within the last year",
+                    "Excellent written and verbal communication skills",
+                    "Highly adaptable with a strong ability to problem solve, prioritize, and remain organized in a fast-paced environment",
+                    "Works well independently and collaboratively with a team",
+                    "Proficient social media skills and customer service experience is an asset",
+                    "Proficient in technology (i.e. troubleshooting issue faced on an online call)",
+                    "Candidates must be comfortable with speaking in front of people in an online setting and remain engaged and proactive",
+                    "Cash handling experience, AV/stage experience, and/or photo/video experience is an asset, but is not required",
+                ]
+            },
+        },
         status: "closed",
-        application_link: "https://www.tedxsfu.com/",
+        application_link: "https://docs.google.com/forms/d/1KIaYSue-dRdZ0d9kMQKzlicetsfL6rK4AST1HKj_oiU/viewform",
     },
     {
         id: "coach",
         role: "Speaker Coach",
         application_period: "June 8-24, 2022",
-        description: "Do you have excellent communication skills? Are you driven and committed to helping speakers succeed? Do you have the ability to work with other speaker coaches and value the importance of constructive criticism? If you understand inclusivity and adopt a collaborative team style approach with the Content Development Team then this role may be the right fit for you.\nCoaches are an integral part of the TEDxSFU experience. By sharing your knowledge and experience with the speakers, you will support them on the journey of preparing for their presentations.\nAs a TEDxSFU Speaker Coach, you will be working closely with the TEDxSFU Content Development Team, Project Leads, and one other Speaker Coach. Your primary responsibility is to deliver a minimum of five total speaker coaching sessions for this year’s TEDxSFU Speakers to help each of their talks come to fruition. The total number of speakers can range anywhere between eight to twelve individuals.",
+        description: {
+            overview: {
+                content: "Do you have excellent communication skills? Are you driven and committed to helping speakers succeed? Do you have the ability to work with other speaker coaches and value the importance of constructive criticism? If you understand inclusivity and adopt a collaborative team style approach with the Content Development Team then this role may be the right fit for you.\nAs a TEDxSFU Speaker Coach, you will be working closely with the TEDxSFU Content Development Team, Project Leads, and one other Speaker Coach. Your primary responsibility is to deliver a minimum of five total speaker coaching sessions for this year’s TEDxSFU Speakers to help each of their talks come to fruition. The total number of speakers can range anywhere between eight to twelve individuals.",
+                recommendation: "We recommend speaker coach applicants to be based within the Metro Vancouver area. As similar to last year, the conference this year is expected to be hosted in-person",
+            },
+            position_details: {
+                title: "Position Details",
+                official_title: {
+                    title: "Official Title",
+                    content: "TEDxSFU 2022 Speaker Coach",
+                },
+                duration: {
+                    title: "Duration",
+                    content: "July 2022 - November 2022",
+                },
+                type: {
+                    title: "Position Type",
+                    content: "Voluntary",
+                },
+                time_commitment: {
+                    title: "Time Commitment",
+                    content: "A weekly time commitment of 3-6 hours per week is required.",
+                },
+                qualifications: {
+                    title: "Qualifications",
+                    content: [
+                        "Experience with speaking in front of medium-to-large audiences",
+                        "Professional disposition",
+                        "Able to manage time effectively and multitask while coaching speakers",
+                        "Excellent written and verbal communication skills",
+                        "Previous coaching and/or teaching experience is an asset",
+                        "Ability to drive or successfully commute to location for sessions",
+                    ],
+                }
+            },
+            main_duties: {
+                title: "Main Duties",
+                content: [
+                    "Work with one other speaker coach in delivering a minimum of five total speaker coaching sessions between July 2022 and the end of October 2022",
+                    "Present coaching sessions in accordance with all rules and guidelines set forth by TED as well as any additional criteria set forth by TEDxSFU",
+                    "Prepare a detailed lesson plan for every speaking coaching session",
+                    "Support TEDxSFU Speakers by attending the TEDxSFU conference and the dress rehearsals set by the TEDxSFU Organizing Committee",
+                    "Attend a sensitivity training session led by the TEDxSFU Organizing Committee",
+                ],
+            },
+            expectations: {
+                title: "Expectations",
+                content: [
+                    "Support the growth of the TEDxSFU speakers by providing constructive feedback on their developing talks during speaker coaching sessions and any dress rehearsals",
+                    "Display a commitment to each speaker’s individual success and demonstrate approachability when speakers request for any additional assistance",
+                    "Be able to work in a professional and respectful manner with multiple stakeholders. This includes speakers, organizing committee members, other speaker coaches, etc.",
+                    "Promptly reply to all email correspondence from any of the TEDxSFU Speakers or Organizing Committee members",
+                    "Promote a respectful and collaborative environment during coaching sessions and dress rehearsals",
+                ],
+            },
+            covid_notes: {
+                title: "Changes to TEDxSFU Amid the COVID-19 Pandemic",
+                content: "Given recent recovery regulations from the global spread of COVID-19, we aim at following the best practices to reduce the risk of COVID-19 infection. The conference will be held in person this year. However, we continue to monitor the BC Health guidelines and will keep everyone involved updated if the guidelines were to change.",
+            },
+            timeline: {
+                title: "Below is our rough timeline",
+                content: [
+                    {
+                        datetime: "July  2022 - October 2022",
+                        activity: "Five to ten coaching sessions",
+                    },
+                    {
+                        datetime: "October 2022 - November 2022",
+                        activity: "One to two dress rehearsals",
+                    },
+                    {
+                        datetime: "November 2022",
+                        activity: "TEDxSFU’s 2022 Conference (Venue will be located within Metro Vancouver)",
+                    },
+                ],
+            }
+        },
         status: "closed",
         application_link: "https://docs.google.com/forms/d/e/1FAIpQLSdUVvXvjcojzFw6uo7CZ7NXkX3V8EQrWPpk4qzrfDZurQG0Ag/viewform",
     },
@@ -19,7 +133,74 @@ const Opportunities = [
         id: "speaker",
         role: "Speaker",
         application_period: "June 11-26, 2022",
-        description: "Do you have a story to tell? Are you passionate about a topic of interest? Do you have excellent communication skills? Are you driven and committed to giving a TEDx Talk? Do you have the ability to work with others and value the importance of constructive criticism? If you understand inclusivity and adopt a collaborative team style approach then being a TEDxSFU Speaker may be the right fit for you.\nEvery year TEDxSFU conferences provide a platform for industry professionals, advocates, educators, and storytellers to showcase their ideas worth spreading. TEDxSFU continues to engage over 400 attendees annually through conferences, dialogue sessions and after party events. We're excited to gather a team who share similar desires to build community and spaces for storytelling, dialogue, and exploration of today's most intriguing and pressing topics - while having fun in the process!\nOur theme for this year’s conference is Reflection! TEDxSFU Reflection encourages all to reflect on their own accomplished journeys. Our current situations have been shaped as a result of a change in direction in our lives. We believe it’s important to give serious thought and consideration to your past choices, innovations and struggles, and use these reflections as a drive to shape the present and the future. This year, TEDxSFU invites people who dare to reflect on themselves and the issues surrounding the world. People who have stepped out of the norm and broken their comfort to embark on a journey unknown, people who visualize their accomplishments, people who celebrate their bloom through reflection. We want to hear your innovative and empowering stories of reflection, what makes you unique, what is your reflection? \nBecome a TEDxSFU Speaker and mirror your unknown journeys with us!\nAs a TEDxSFU Speaker, you will be working closely with the TEDxSFU Content Development Team, Project Leads, and Speaker Coaches. Your primary responsibility is to develop your TEDx\nTalk by attending speaker coaching sessions and presenting your refined talk at TEDxSFU’s 12th Annual Conference.",
+        description: {
+            overview: {
+                content: "Our theme for this year’s conference is Reflection! TEDxSFU Reflection encourages all to reflect on their own accomplished journeys. Our current situations have been shaped as a result of a change in direction in our lives. We believe it’s important to give serious thought and consideration to your past choices, innovations and struggles, and use these reflections as a drive to shape the present and the future. This year, TEDxSFU invites people who dare to reflect on themselves and the issues surrounding the world. People who have stepped out of the norm and broken their comfort to embark on a journey unknown, people who visualize their accomplishments, people who celebrate their bloom through reflection. We want to hear your innovative and empowering stories of reflection, what makes you unique, what is your reflection? Become a TEDxSFU Speaker and mirror your unknown journeys with us!\n As a TEDxSFU Speaker, you will be working closely with the TEDxSFU Content Development Team, Project Leads, and Speaker Coaches. Your primary responsibility is to develop your TEDx Talk by attending speaker coaching sessions and presenting your refined talk at TEDxSFU’s 12th Annual Conference.\nSpeaker applicants don’t have to be affiliated with Simon Fraser University, although we do recommend them to be based within the Metro Vancouver area.",
+                recommendation: "We recommend any person of any age and background who has an idea worth sharing to apply!",
+            },
+            position_details: {
+                official_title: {
+                    title: "Official Title",
+                    content: "TEDxSFU 2022 Speaker",
+                },
+                duration: {
+                    title: "Duration",
+                    content: "July 2022 - November 2022",
+                },
+                type: {
+                    title: "Position Type",
+                    content: "Voluntary",
+                },
+                time_commitment: {
+                    title: "Time Commitment",
+                    content: "3-6 hours per week is the suggested minimum time commitment",
+                },
+                qualifications: {
+                    title: "Qualifications",
+                    content: [
+                        "Possess the ability to see how your topic fits into the bigger idea of this year’s TEDxSFU theme and conference",
+                        "Have a willingness to speak in front of medium-to-large audiences",
+                        "Have access to Zoom or other video conferencing software",
+                    ],
+                }
+            },
+            expectations: {
+                title: "Expectations",
+                content: [
+                    "Ideate, craft and present an engaging and memorable TEDx talk to multiple individuals within the community",
+                    "Be able to attend dress rehearsals, speaker shoots, and any other commitments requested by the TEDxSFU team",
+                    "Attend all TEDxSFU speaker coaching sessions facilitated by TEDxSFU. Additionally, we will not be allowing personal coaches to attend coaching sessions, but personal coaches are permitted on their own time",
+                    "Be respectful of speaker coaches and other speakers by being able to factor in their feedback when developing your talk",
+                    "Be honest and empathetic towards others and display a sense of emotional intelligence",
+                    "Be able to work in a professional and respectful manner with multiple stakeholders. This includes speaker coaches, organizing committee members, other speakers, etc.",
+                    "Maintain email correspondence with all TEDxSFU staff",
+                    "Adhere in accordance with all rules and guidelines set forth by TED as well as any additional criteria set forth by TEDxSFU",
+                    "We advise speakers to be respectful to the TEDxSFU Organizing Committee members",
+                    "Have access to Zoom or other video conferencing software",
+                ],
+            },
+            covid_notes: {
+                title: "Changes to TEDxSFU Amid the COVID-19 Pandemic",
+                content: "The conference will be held in person this year. In case of any complications, backup measures will be taken to smoothly conduct the conference virtually.",
+            },
+            timeline: {
+                title: "Below is our rough timeline",
+                content: [
+                    {
+                        datetime: "July  2022 - October 2022",
+                        activity: "Five to ten coaching sessions",
+                    },
+                    {
+                        datetime: "October 2022 - November 2022",
+                        activity: "One to two dress rehearsals",
+                    },
+                    {
+                        datetime: "November 2022",
+                        activity: "TEDxSFU’s 2022 Conference (Venue will be located within Metro Vancouver)",
+                    },
+                ],
+            }
+        },
         status: "closed",
         application_link: "https://docs.google.com/forms/d/e/1FAIpQLSfarTL1UiiLmsOpBbjcGPVvTim3pXCRKtpCW_nNb6uklY9f4Q/viewform",
     },
@@ -27,7 +208,11 @@ const Opportunities = [
         id: "mc",
         role: "Master of Ceremonies (MC)",
         application_period: "TBA",
-        description: "Are you a strong public speaker? Do you have the energy to engage a large audience? Are you able to coordinate under time pressure? Then you may be a great fit to be our MC for this year’s TEDxSFU conference year!\nAs a TEDxSFU MC, you will be working closely with the TEDxSFU Content Development Team, Events Team, Speaker Coaches, and our Project Leads. Your primary responsibility is to structure and moderate our TEDxSFU Conference.\nThe TEDxSFU team is currently working on a rough skeleton of the conference flow. We understand that some MCs prefer to write and/or tweak their own script and not restrain themselves strictly to a word-for-word provided script and some prefer to refer to main talking points (bullet points) instead. In either case, we will gladly work with what you're comfortable with.",
+        description: {
+            overview: {
+                content: "Are you a strong public speaker? Do you have the energy to engage a large audience? Are you able to coordinate under time pressure? Then you may be a great fit to be our MC for this year’s TEDxSFU conference year!\nAs a TEDxSFU MC, you will be working closely with the TEDxSFU Content Development Team, Events Team, Speaker Coaches, and our Project Leads. Your primary responsibility is to structure and moderate our TEDxSFU Conference.\nThe TEDxSFU team is currently working on a rough skeleton of the conference flow. We understand that some MCs prefer to write and/or tweak their own script and not restrain themselves strictly to a word-for-word provided script and some prefer to refer to main talking points (bullet points) instead. In either case, we will gladly work with what you're comfortable with."
+            }
+        },
         status: "upcoming",
         application_link: "https://google.com",
     },
