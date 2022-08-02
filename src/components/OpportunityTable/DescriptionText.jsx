@@ -4,6 +4,17 @@ import SimpleTextLink from "../SimpleTextLink/SimpleTextLink";
 
 const DescriptionText = ({ opportunity }) => {
     const description = opportunity.description;
+
+    const shouldContactContent = (opportunity) => {
+        const recruitedByContent = ["coach", "speaker", "mc", "energizer"];
+        return recruitedByContent.includes(opportunity);
+    }
+
+    const shouldContactEvent = (opportunity) => {
+        const recruitedByEvent = ["ga"];
+        return recruitedByEvent.includes(opportunity);
+    }
+
     return (
         <>
             {description.overview &&
@@ -228,7 +239,7 @@ const DescriptionText = ({ opportunity }) => {
                 </section>
             }
 
-            {opportunity.id === 'ga' &&
+            {shouldContactEvent(opportunity.id) &&
                 <p className="contact-info">
                     If you have any questions, please contact <em>Director of Events</em> (
                     <SimpleTextLink
@@ -249,7 +260,7 @@ const DescriptionText = ({ opportunity }) => {
                 </p>
             }
 
-            {(opportunity.id === 'coach' || opportunity.id === 'speaker') &&
+            {shouldContactContent(opportunity.id) &&
                 <p className="contact-info">
                     Have any questions about the application or opportunity? Send <em>TEDxSFU's Content
                     Development team</em> an email at <SimpleTextLink

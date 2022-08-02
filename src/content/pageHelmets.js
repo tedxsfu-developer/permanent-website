@@ -10,12 +10,17 @@ const PageHelmets = {
     home: buildPageHelmet(
         'TEDxSFU 2022 is coming soon',
         'https://www.tedxsfu.com/',
-        'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Our goal is to bring people together to share a TED-like experience while promoting ideas worth spreading.'
+        'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Our goal is to bring people together to share a TED-like experience while promoting ideas worth spreading.',
+    ),
+    about: buildPageHelmet(
+        'About TEDxSFU 2022',
+        'https://www.tedxsfu.com/about',
+        'This year, TEDxSFU challenges people who dare to reflect on their journeys and the issues surrounding the world. As we reflect deeply on our past choices, triumphs and struggles, these introspections can present opportunities to change the present and the future for good.',
     ),
     opportunity: buildPageHelmet(
         'Be a part of TEDxSFU',
         'https://www.tedxsfu.com/opportunity',
-        'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Join us and be a part of TEDxSFU Conference.'
+        'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Join us and be a part of TEDxSFU Conference.',
     ),
     partner: buildPageHelmet(
         'Become partners for TEDxSFU 2022',
