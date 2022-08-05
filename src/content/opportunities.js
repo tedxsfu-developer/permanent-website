@@ -207,14 +207,64 @@ const Opportunities = [
     {
         id: "mc",
         role: "Master of Ceremonies (MC)",
-        application_period: "TBA",
+        application_period: "August, 12th 2022 11:59PM",
         description: {
             overview: {
-                content: "Are you a strong public speaker? Do you have the energy to engage a large audience? Are you able to coordinate under time pressure? Then you may be a great fit to be our MC for this year’s TEDxSFU conference year!\nAs a TEDxSFU MC, you will be working closely with the TEDxSFU Content Development Team, Events Team, Speaker Coaches, and our Project Leads. Your primary responsibility is to structure and moderate our TEDxSFU Conference.\nThe TEDxSFU team is currently working on a rough skeleton of the conference flow. We understand that some MCs prefer to write and/or tweak their own script and not restrain themselves strictly to a word-for-word provided script and some prefer to refer to main talking points (bullet points) instead. In either case, we will gladly work with what you're comfortable with."
+                content: "Are you a strong public speaker? Do you have the energy to engage a large audience? Are you able to coordinate under time pressure? Then you may be a great fit to be our MC for this year’s TEDxSFU conference year!\nAs a TEDxSFU MC, you will be working closely with the TEDxSFU Content Development Team, Events Team, Speaker Coaches, and our Project Leads. Your primary responsibility is to structure and moderate our TEDxSFU Conference.\nThe TEDxSFU team is currently working on a rough skeleton of the conference flow. We understand that some MCs prefer to write and/or tweak their own script and not restrain themselves strictly to a word-for-word provided script and some prefer to refer to main talking points (bullet points) instead. In either case, we will gladly work with what you're comfortable with.",
+            },
+            position_details: {
+                official_title: {
+                    title: "Official Title",
+                    content: " TEDxSFU 2022 MC",
+                },
+                duration: {
+                    title: "Duration",
+                    content: "August 2022 - November 2022",
+                },
+                type: {
+                    title: "Position Type",
+                    content: "Voluntary",
+                },
+            },
+            main_duties: {
+                title: "Main Duties",
+                content: [
+                    "Monitor the conference agenda effectively so that the event proceeds in a timely manner",
+                    "Introduce performers, speakers, and any other talent presenting at the in-person conference",
+                    "Announce important items on the agenda (housekeeping rules, breaks, raffle draws, etc.)",
+                    "Recognize sponsors",
+                ],
+            },
+            expectations: {
+                title: "Expectations",
+                content: [
+                    "To ensure our agenda for the conference day is followed.",
+                    "Be able to work under pressure on stage.",
+                    "To attend the required Dress Rehearsals",
+                    "Be able to work in a professional and respectful manner with multiple stakeholders. This includes speakers, organizing committee members, audience members, etc.",
+                    "Promptly reply to all email or Slack correspondence from Organizing Committee members.",
+                ],
+            },
+            covid_notes: {
+                title: "Changes to TEDxSFU Amid the COVID-19 Pandemic",
+                content: "The conference will be held in person this year. In case of any complications, backup measures will be taken to smoothly conduct the conference virtually.",
+            },
+            timeline: {
+                title: "Below is our tentative important dates",
+                content: [
+                    {
+                        datetime: "October 29th, 2022, and November 4th, 2022",
+                        activity: "Two dress rehearsals. MCs are expected to attend all.",
+                    },
+                    {
+                        datetime: "November 5th, 2022",
+                        activity: "TEDxSFU’s 2022 Conference",
+                    },
+                ],
             }
         },
         status: "upcoming",
-        application_link: "https://google.com",
+        application_link: "https://forms.gle/Vv4nK248hmhTMgsm7",
     },
 ];
 
