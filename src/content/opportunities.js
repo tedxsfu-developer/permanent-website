@@ -263,8 +263,55 @@ const Opportunities = [
                 ],
             }
         },
-        status: "upcoming",
+        status: "open",
         application_link: "https://forms.gle/Vv4nK248hmhTMgsm7",
+    },
+    {
+        id: "energizer",
+        role: "Performer & Energizer",
+        application_period: "August, 12th 2022 11:59PM",
+        description: {
+            overview: {
+                content: "Do you have an amazing talent, burning passion, singing voice, or musical ability you’d like to share? You might be a good fit to perform at the 2022 TEDxSFU Conference!\nPrevious performers at TEDxSFU include Royal Oak, LaterDays, and The Escapes. Energizers have included Bettina Rothe and Mara Branscombe.\nReporting to the Director of Events, performers and energizers support the TEDxSFU Conference in retaining audience engagement during intermissions and lunch breaks. Performers and energizers will have 10–20 minutes for their routine, whether that is a talent demonstration or musical performance.\nPerformers and energizers should provide any essential equipment for their routine. TEDxSFU will provide microphones and audio connections to the in-house speakers and recording equipment, however musical performers are responsible for their own instruments and amplifiers.\nIn addition to the TEDxSFU Conference day, performers and energizers must be present for the rehearsal dates prior to the conference, as explained below. Performers and energizers must maintain timely communication with the TEDxSFU Director of Events and Organizing Committee.",
+            },
+            position_details: {
+                official_title: {
+                    title: "Official Title",
+                    content: "Performer/Energizer",
+                },
+                duration: {
+                    title: "Duration",
+                    content: "August 2022 – November, 2022",
+                },
+                type: {
+                    title: "Position Type",
+                    content: "Voluntary",
+                },
+            },
+            covid_notes: {
+                title: "Changes to TEDxSFU Amid the COVID-19 Pandemic",
+                content: "The conference will be held in person this year. In case of any complications, backup measures will be taken to smoothly conduct the conference virtually.",
+            },
+            timeline: {
+                title: "Below is our tentative important dates",
+                content: [
+                    {
+                        datetime: "October 29, 2022",
+                        activity: "Rehearsal (Bare Stage)",
+                    },
+                    {
+                        datetime: "November 4, 2022",
+                        activity: "Dress Rehearsal",
+                    },
+                    {
+                        datetime: "November 5, 2022",
+                        activity: "TEDxSFU’s 2022 Conference",
+                    },
+                ],
+            }
+        },
+        status: "open",
+        application_link: "https://docs.google.com/forms/d/e/1FAIpQLSePcD_h_jMOQx-5JxI-VDeY49HAAaNUJGztJ7b22PodvM0VRg/viewform",
     },
 ];
 

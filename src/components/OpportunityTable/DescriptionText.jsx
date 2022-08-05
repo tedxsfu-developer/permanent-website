@@ -6,13 +6,18 @@ const DescriptionText = ({ opportunity }) => {
     const description = opportunity.description;
 
     const shouldContactContent = (opportunity) => {
-        const recruitedByContent = ["coach", "speaker", "mc", "energizer"];
+        const recruitedByContent = ["coach", "speaker", "mc"];
         return recruitedByContent.includes(opportunity);
     }
 
     const shouldContactEvent = (opportunity) => {
-        const recruitedByEvent = ["ga"];
+        const recruitedByEvent = ["energizer"];
         return recruitedByEvent.includes(opportunity);
+    }
+
+    const shouldContactEventAndInternal = (opportunity) => {
+        const recruitedByEventAndInternal = ["ga"];
+        return recruitedByEventAndInternal.includes(opportunity);
     }
 
     return (
@@ -239,7 +244,7 @@ const DescriptionText = ({ opportunity }) => {
                 </section>
             }
 
-            {shouldContactEvent(opportunity.id) &&
+            {shouldContactEventAndInternal(opportunity.id) &&
                 <p className="contact-info">
                     If you have any questions, please contact <em>Director of Events</em> (
                     <SimpleTextLink
@@ -257,6 +262,19 @@ const DescriptionText = ({ opportunity }) => {
                         internal@tedxsfu.com
                     </SimpleTextLink>
                     )
+                </p>
+            }
+
+            {shouldContactEvent(opportunity.id) &&
+                <p className="contact-info">
+                    If you have any questions, please contact <em>Director of Events</em> (
+                    <SimpleTextLink
+                        link="mailto:events@tedxsfu.com"
+                        isInternal={false}
+                        shouldOpenInNewTab={false}
+                    >
+                        events@tedxsfu.com
+                    </SimpleTextLink>)
                 </p>
             }
 

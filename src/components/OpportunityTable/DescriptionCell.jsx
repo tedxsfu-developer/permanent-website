@@ -52,7 +52,7 @@ const OpportunityTable = ({ opportunity }) => {
             {opportunity.status === "open" &&
                 <DefaultButton
                     link={opportunity.application_link}
-                    label="Click Here To Apply"
+                    label="Apply Now"
                     isInternal={false}
                     className='transparent'
                     shouldOpenInNewTab={true}
