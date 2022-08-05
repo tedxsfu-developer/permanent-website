@@ -8,7 +8,7 @@ const PageLayout = (props) => {
     if (typeof window !== "undefined") {
         let viewportWidth = window.innerWidth;
         let pageLayout;
-        if (viewportWidth >= 48 * REM_UNIT) {
+        if (viewportWidth >= 64 * REM_UNIT) {
             pageLayout = (
                 <React.Fragment>
                     {/*<StickyNotification><p>We are looking for MC, Performers & Energizers for TEDxSFU 2022*/}

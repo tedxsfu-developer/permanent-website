@@ -23,6 +23,7 @@ const TicketPage = () => {
                 description={PageHelmets.tickets.description}/>
             <PageLayout>
                 <main id='tickets-eventbrite'>
+                    <h1 className='page-title'>Get Your Tickets To TEDxSFU 2022</h1>
                     <div id="eventbrite-widget-container-416405629447"></div>
                     {useImportScript("../../script/ticket.js")}
                 </main>

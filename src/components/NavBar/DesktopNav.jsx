@@ -1,20 +1,36 @@
-import React from "react";
-import DefaultButton from "../Buttons/DefaultButton";
+import React, { useEffect, useState } from "react";
+import LinkButton from "../Buttons/LinkButton";
 import arrow_right from "../../images/arrow_forward.svg";
 import Menu from "./Menu";
+import Navigation from "./Navigation";
 
 const DesktopNav = (props) => {
+    const [showMenu, setShowMenu] = useState(false);
+    const handleClick = () => {
+        setShowMenu(!showMenu);
+    }
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.addEventListener('click', (event) => {
+            if (showMenu) {
+                setShowMenu(false);
+            }
+        })
+    }, [showMenu]);
+
     return (
         <div id='desktop-nav' className='fade-slide-in'>
-            <DefaultButton link="/tickets"
-                           label="Get Tickets"
-                           isInternal={true}
-                           className='transparent'
+            <LinkButton link="/tickets"
+                        label="Get Tickets"
+                        isInternal={true}
+                        className='transparent'
             >
                 <img src={arrow_right} alt="Get your tickets to TEDxSFU 2022 Conference" width="16" height="16"
                      className="filter-white"/>
-            </DefaultButton>
-            <Menu/>
+            </LinkButton>
+            <Menu handleClick={handleClick}/>
+            <Navigation showMenu={showMenu}/>
         </div>
     );
 };

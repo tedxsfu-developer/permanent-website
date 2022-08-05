@@ -1,9 +1,10 @@
-import DefaultButton from "./DefaultButton";
+import React from "react";
+import LinkButton from "./LinkButton";
 
 const TransparentButton = (props) => {
     const { className, ...rest } = props;
     return (
-        <DefaultButton className='transparent' {...rest} />
+        <LinkButton className='transparent' {...rest} />
     );
 }
 

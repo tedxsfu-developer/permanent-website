@@ -7,6 +7,7 @@ import SpeakerInfo from "../../components/SpeakerInfo/SpeakerInfo";
 
 const SpeakersPage = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
+
     useEffect(() => {
         const windowHeight = window.innerHeight;
         const speakerList = document.querySelector('ul#speaker-list');
@@ -37,7 +38,7 @@ const SpeakersPage = () => {
         const handleSpeakerIndicatorClick = (itemOrder) => {
             if (typeof window !== "undefined") {
                 window.scrollTo({
-                    y: itemOrder * windowHeight,
+                    top: speakerList.children[itemOrder].offsetTop,
                     behavior: "smooth",
                 });
             }
@@ -45,20 +46,33 @@ const SpeakersPage = () => {
 
 
         if (typeof window !== "undefined") {
+            // window.addEventListener('readystatechange', handlePageReload);
+
             window.addEventListener('scroll', handleSpeakerListScroll);
+
             speakerIndicatorItems.forEach((indicator, indicatorIndex) => {
                 indicator.addEventListener('click', () => {
-                    window.scrollTo({
-                        top: speakerList.children[indicatorIndex].offsetTop,
-                        behavior: "smooth",
-                    });
+                    handleSpeakerIndicatorClick(indicatorIndex);
                 });
             })
+
             return () => {
                 window.removeEventListener('scroll', handleSpeakerListScroll);
+                speakerIndicatorItems.forEach((indicator, indicatorIndex) => {
+                    indicator.removeEventListener('click', () => handleSpeakerIndicatorClick(indicatorIndex));
+                });
             };
         }
     }, [lastScrollY]);
+
+    useEffect(() => {
+        const handlePageReload = () => {
+            if (typeof window !== "undefined") {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        handlePageReload();
+    }, []);
 
     return (
         <React.Fragment>
@@ -81,7 +95,7 @@ const SpeakersPage = () => {
                             if (speakerIndex === 0) {
                                 return (
                                     <li key={`${speaker.id}-info`} className='indicator-item active'>
-                                        <a href={`#${speaker.id}-info`}></a>
+                                        <a href={`#${speaker.id}-info`} className='hidden'>{speaker.id}</a>
                                     </li>
                                 );
                             } else {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const DefaultButton = (props) => {
+const LinkButton = (props) => {
     const className = `button all-caps ${props.className}`;
     const button = props.isInternal
         ? <Link to={props.link} className={className}>{props.label}{props.children && props.children}</Link>
@@ -17,4 +17,4 @@ const DefaultButton = (props) => {
     return button;
 };
 
-export default DefaultButton;
+export default LinkButton;

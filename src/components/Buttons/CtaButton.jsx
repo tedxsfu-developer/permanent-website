@@ -1,10 +1,10 @@
 import React from "react";
-import DefaultButton from "./DefaultButton";
+import LinkButton from "./LinkButton";
 
 const CtaButton = (props) => {
     const { className, ...rest } = props;
     return (
-        <DefaultButton {...(props.id && { id: props.id })} className='cta' {...rest} />
+        <LinkButton {...(props.id && { id: props.id })} className='cta' {...rest} />
     );
 }
 
