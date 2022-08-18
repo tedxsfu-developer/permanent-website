@@ -263,7 +263,7 @@ const Opportunities = [
                 ],
             }
         },
-        status: "open",
+        status: "closed",
         application_link: "https://forms.gle/Vv4nK248hmhTMgsm7",
     },
     {
@@ -310,7 +310,7 @@ const Opportunities = [
                 ],
             }
         },
-        status: "open",
+        status: "closed",
         application_link: "https://docs.google.com/forms/d/e/1FAIpQLSePcD_h_jMOQx-5JxI-VDeY49HAAaNUJGztJ7b22PodvM0VRg/viewform",
     },
 ];
