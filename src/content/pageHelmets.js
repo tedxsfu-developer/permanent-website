@@ -27,6 +27,11 @@ const PageHelmets = {
         'https://www.tedxsfu.com/partner',
         'Connect with your target audience through shared values and interests engagingly and thoughtfully. The TEDxSFU Conference is our signature event driven by ideas worth spreading. Every year over 300 people attend in support of our mission.'
     ),
+    team: buildPageHelmet(
+        'Meet The Team',
+        'https://www.tedxsfu.com/team',
+        'Behind the scenes, our amazing team that has been working tirelessly to bring you the TEDxSFU 2022 Conference! Meet our incredible OC team and get to learn a bit more about each of them!'
+    ),
 };
 
 export default PageHelmets;
