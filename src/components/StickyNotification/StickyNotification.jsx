@@ -15,7 +15,7 @@ const StickyNotification = ({ children }) => {
                 setLastScrollY(window.scrollY);
             }
         };
-        
+
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlStickyNotification);
             return () => {
@@ -25,7 +25,7 @@ const StickyNotification = ({ children }) => {
     }, [lastScrollY]);
 
     return (
-        <div id="notification" {...(!show && { className: 'hidden' })}>{children}</div>
+        <div id="notification" {...(!show && { className: 'hidden look-through' })}>{children}</div>
     );
 }
 

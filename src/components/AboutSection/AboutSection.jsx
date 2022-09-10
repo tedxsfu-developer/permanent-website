@@ -19,7 +19,7 @@ const AboutSection = ({ info, expanded }) => {
             aria-controls={info.id}
             className="no-border toggle icon-button"
             onClick={handleSectionClick}
-            noShow={true}
+            notShowLabel={true}
         />;
 
     const dropUpButton =
@@ -31,7 +31,7 @@ const AboutSection = ({ info, expanded }) => {
             aria-controls={info.id}
             className="no-border toggle icon-button"
             onClick={handleSectionClick}
-            noShow={true}
+            notShowLabel={true}
         />;
     return (
         <section id={info.id} className={`about-section ${isExpanded ? "expanded" : "collapsed"}`}

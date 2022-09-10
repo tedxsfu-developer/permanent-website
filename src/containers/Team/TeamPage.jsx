@@ -37,7 +37,7 @@ const TeamPage = () => {
                 }
                 {!isDesktop &&
                     <React.Fragment>
-                        <h1 className='team page-title'>Meet the team</h1>
+                        <h1 className='team page-title fade-slide-in'>Meet the team</h1>
                         <MobileTeamNav/>
                         <main id='team' className='horizontally-centered fade-slide-in'>
                             {Teams.map(team => <TeamBio team={team}/>)}

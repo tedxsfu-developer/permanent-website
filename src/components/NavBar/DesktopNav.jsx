@@ -1,10 +1,11 @@
 import React from "react";
 import DefaultButton from "../Buttons/DefaultButton";
 import arrow_right from "../../images/arrow_forward.svg";
+import Menu from "./Menu";
 
 const DesktopNav = (props) => {
     return (
-        <div id='desktop-nav'>
+        <div id='desktop-nav' className='fade-slide-in'>
             <DefaultButton link="/opportunity"
                            label="Opportunities"
                            isInternal={true}
@@ -13,7 +14,7 @@ const DesktopNav = (props) => {
                 <img src={arrow_right} alt="Check out opportunities with TEDxSFU" width="16" height="16"
                      className="filter-white"/>
             </DefaultButton>
-            {/*<Menu/>*/}
+            <Menu/>
         </div>
     );
 };

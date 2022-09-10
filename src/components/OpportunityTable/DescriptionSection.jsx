@@ -20,7 +20,7 @@ const DescriptionSection = (props) => {
             aria-controls={props.opportunity.id}
             className="no-border toggle icon-button"
             onClick={handleDescriptionClick}
-            noShow={true}
+            notShowLabel={true}
         />;
 
     const dropUpButton =
@@ -32,7 +32,7 @@ const DescriptionSection = (props) => {
             aria-controls={props.opportunity.id}
             className="no-border toggle icon-button"
             onClick={handleDescriptionClick}
-            noShow={true}
+            notShowLabel={true}
         />;
 
     return (

@@ -20,7 +20,7 @@ const OpportunityTable = ({ opportunity }) => {
             aria-expanded="false"
             aria-controls={opportunity.id}
             className="no-border toggle icon-button"
-            noShow={true}
+            notShowLabel={true}
         />;
 
     const dropUpButton =
@@ -31,7 +31,7 @@ const OpportunityTable = ({ opportunity }) => {
             aria-expanded="true"
             aria-controls={opportunity.id}
             className="no-border toggle icon-button"
-            noShow={true}
+            notShowLabel={true}
         />;
 
     return (
