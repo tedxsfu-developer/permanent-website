@@ -2,7 +2,7 @@ import React from "react";
 import PageHelmet from "../components/PageHelmet";
 import PageHelmets from "../content/pageHelmets";
 import PageLayout from "../components/PageLayout/PageLayout";
-import TicketIframe from "../components/TicketIframe/TicketIframe";
+import TicketButton from "../components/TicketButton/TicketButton";
 
 const Ticket = () => {
     return (
@@ -13,7 +13,7 @@ const Ticket = () => {
                 description={PageHelmets.speakers.description}/>
             <PageLayout>
                 <main id='tickets-eventbrite'>
-                    <TicketIframe/>
+                    <TicketButton/>
                 </main>
             </PageLayout>
         </React.Fragment>
