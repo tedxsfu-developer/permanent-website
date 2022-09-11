@@ -32,6 +32,11 @@ const PageHelmets = {
         'https://www.tedxsfu.com/team',
         'Behind the scenes, our amazing team that has been working tirelessly to bring you the TEDxSFU 2022 Conference! Meet our incredible OC team and get to learn a bit more about each of them!'
     ),
+    speakers: buildPageHelmet(
+        'TEDxSFU 2022 Speakers',
+        'https://www.tedxsfu.com/',
+        'TEDxSFU is an independently organized event organized by students and alumni volunteers at Simon Fraser University. Our goal is to bring people together to share a TED-like experience while promoting ideas worth spreading.',
+    ),
 };
 
 export default PageHelmets;
