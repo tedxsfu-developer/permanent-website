@@ -12,3 +12,16 @@ exports.createPages = async function ({ actions }) {
         });
     });
 };
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    actions.setWebpackConfig({
+        module: {
+            rules: [
+                {
+                    test: /react-eventbrite-popup-checkout/,
+                    use: loaders.null(),
+                },
+            ],
+        },
+    });
+};
