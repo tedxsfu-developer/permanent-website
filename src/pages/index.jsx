@@ -1,9 +1,9 @@
 import React from "react";
-import IndexPage from "../containers/Index/IndexPage";
+import SpeakersPage from "../containers/Speakers/SpeakersPage";
 
 const Index = () => {
     return (
-        <IndexPage/>
+        <SpeakersPage/>
     );
 }
 

@@ -1,0 +1,107 @@
+@import "./src/styles/assets"
+
+article.speaker-bio
+  position: absolute
+
+  h2.talk-title
+    font-weight: 600
+
+  h2.speaker-name
+    font-weight: normal
+
+  h3.speaker-title
+    color: rgba(255, 255, 255, .6)
+
+img.full-screen
+  width: 100%
+  height: auto
+
+@media only screen and (min-width: 20rem)
+  article.speaker-bio
+    width: 100%
+    max-width: 100%
+
+    h2.talk-title
+      margin-bottom: 1rem
+
+    p.intro
+      margin-top: 1rem
+
+    button.toggle
+      display: flex
+      flex-direction: column
+      margin: auto
+
+      span
+        font-weight: normal
+        color: rgba(255, 255, 255, .8)
+
+      img
+        width: 2rem
+        height: auto
+        margin: auto
+        //filter: invert(72%) sepia(0%) saturate(17%) hue-rotate(186deg) brightness(94%) contrast(91%)
+        filter: invert(99%) sepia(1%) saturate(349%) hue-rotate(47deg) brightness(116%) contrast(87%)
+
+  article.speaker-bio.collapsed
+    bottom: 0
+    background: linear-gradient(transparent, black)
+    padding: 0 1rem 1rem 1rem
+
+    p.intro
+      display: none
+
+  article.speaker-bio.expanded
+    top: 0
+    padding: 1rem 1rem 0 1rem
+    height: 100%
+
+@media only screen and (min-width: 36rem)
+  article.speaker-bio.collapsed
+    padding: 0 2rem 5rem 2rem
+
+  article.speaker-bio.expanded
+    padding: 2rem 2rem 0 2rem
+
+@media only screen and (min-width: 48rem)
+  article.speaker-bio.collapsed
+    padding: 0 4rem 6rem 4rem
+
+  article.speaker-bio.expanded
+    padding: 4rem 4rem 0 4rem
+
+@media only screen and (min-width: 64rem)
+  article.speaker-bio
+    top: 6rem
+    right: 2rem
+    max-width: 25rem
+
+    h2.talk-title
+      font-size: $default-font-size * 1.5
+      line-height: $default-line-height * 1.5
+      margin-bottom: 1rem
+
+    p.intro
+      margin-top: 1rem
+
+    h2.speaker-name
+      font-size: $default-font-size * 1.5
+
+@media only screen and (min-width: 80rem)
+  article.speaker-bio
+    top: 8rem
+    right: 4rem
+    max-width: 30rem
+
+    h2.talk-title
+      font-size: $default-font-size * 1.75
+      line-height: $default-line-height * 1.75
+
+@media only screen and (min-width: 96rem)
+  article.speaker-bio
+    top: 10rem
+    right: 6rem
+
+    h2.talk-title
+      font-size: $default-font-size * 2
+      line-height: $default-line-height * 2
