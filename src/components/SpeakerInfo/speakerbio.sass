@@ -1,8 +1,6 @@
 @import "./src/styles/assets"
 
 article.speaker-bio
-  position: absolute
-
   h2.talk-title
     font-weight: 600
 
@@ -12,16 +10,27 @@ article.speaker-bio
   h3.speaker-title
     color: rgba(255, 255, 255, .6)
     font-weight: normal
-    line-height: 1rem
+    line-height: 1.2rem
 
 img.full-screen
   width: 100%
   height: auto
 
+button.talk-intro-toggle
+  display: inline-block
+  color: white
+  border: none
+  font-weight: normal
+  background: transparent
+  padding: 0
+  text-decoration: underline
+  text-underline-offset: 0.5rem
+
 @media only screen and (min-width: 20rem)
   article.speaker-bio
     width: 100%
     max-width: 100%
+    position: absolute
 
     h2.talk-title
       margin-bottom: 1rem
@@ -77,37 +86,63 @@ img.full-screen
     padding: 4rem 4rem 0 4rem
 
 @media only screen and (min-width: 64rem)
+  div.bio-container
+    position: absolute
+    top: 10rem
+    right: 4rem
+    width: 25rem
+
   article.speaker-bio
     top: 6rem
-    right: 2rem
-    max-width: 25rem
+    position: initial
 
     h2.talk-title
-      font-size: $default-font-size * 1.5
-      line-height: $default-line-height * 1.5
+      font-size: $default-font-size * 1.1
+      line-height: $default-line-height * 1.1
       margin-bottom: 1rem
 
     p.intro
       margin-top: 1rem
 
     h2.speaker-name
-      font-size: $default-font-size * 1.5
+      font-size: $default-font-size * 1.1
+
+  article.speaker-bio.collapsed
+    height: fit-content
+    padding: 0
+    background: none
+
+    p.intro
+      display: block
+
+  article.speaker-bio.expanded
+    padding: 1rem
+    position: relative
+    height: 40vh
+    overflow: scroll
+    border: 0.1rem solid white
+    border-radius: 0.25rem
+    background: black
+    margin-top: 4rem
+
+  button.talk-intro-toggle.open
+    margin-top: 1rem
+
+  button.talk-intro-toggle.close
+    position: absolute
+    margin-top: 1rem
 
 @media only screen and (min-width: 80rem)
-  article.speaker-bio
-    top: 8rem
-    right: 4rem
-    max-width: 30rem
+  div.bio-container
+    width: 30rem
 
+  article.speaker-bio
     h2.talk-title
-      font-size: $default-font-size * 1.75
-      line-height: $default-line-height * 1.75
+      font-size: $default-font-size * 1.5
+      line-height: $default-line-height * 1.5
 
 @media only screen and (min-width: 96rem)
   article.speaker-bio
-    top: 10rem
-    right: 6rem
-
     h2.talk-title
-      font-size: $default-font-size * 2
-      line-height: $default-line-height * 2
+      font-size: $default-font-size * 1.75
+      line-height: $default-line-height * 1.75

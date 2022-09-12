@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import IconButton from "../Buttons/IconButton";
 import arrow_drop_down from "../../images/arrow_drop_down.svg";
 import arrow_drop_up from "../../images/arrow_drop_up.svg";
-import DefaultButton from "../Buttons/DefaultButton";
+import LinkButton from "../Buttons/LinkButton";
 import DisabledButton from "../Buttons/DisabledButton";
 import DescriptionText from "./DescriptionText";
 
@@ -60,7 +60,7 @@ const DescriptionSection = (props) => {
                 </div>
             </div>
             {props.opportunity.status === "open" &&
-                <DefaultButton
+                <LinkButton
                     link={props.opportunity.application_link}
                     label="Apply Now"
                     isInternal={false}

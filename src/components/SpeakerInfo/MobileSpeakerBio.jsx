@@ -46,12 +46,16 @@ const MobileSpeakerBio = ({ speaker }) => {
                      onKeyDown={handleBioClick}
             >
                 {!isExpanded && expandUpButton}
-                {speaker.topic && <h2 className='talk-title'>{speaker.topic}</h2>}
+                {isExpanded && speaker.talk.shortTopicTitle &&
+                    <h2 className='talk-title'>{speaker.talk.fullTopicTitle}</h2>}
+                {!isExpanded && speaker.talk.shortTopicTitle &&
+                    <h2 className='talk-title'>{speaker.talk.shortTopicTitle}</h2>}
                 <div>
                     <h2 className='speaker-name'>{speaker.name}</h2>
                     <h3 className='all-caps speaker-title'>{speaker.title}</h3>
                 </div>
-                <p className='intro'>{speaker.intro}</p>
+                {isExpanded && <p className='intro'>{speaker.talk.fullIntro}</p>}
+                {!isExpanded && <p className='intro'>{speaker.talk.shortIntro}</p>}
                 {isExpanded && expandDownButton}
             </article>
         </React.Fragment>

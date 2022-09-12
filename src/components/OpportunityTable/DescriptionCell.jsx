@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DefaultButton from "../Buttons/DefaultButton";
+import LinkButton from "../Buttons/LinkButton";
 import DisabledButton from "../Buttons/DisabledButton";
 
 import arrow_drop_down from "../../images/arrow_drop_down.svg";
@@ -50,7 +50,7 @@ const OpportunityTable = ({ opportunity }) => {
             </div>
 
             {opportunity.status === "open" &&
-                <DefaultButton
+                <LinkButton
                     link={opportunity.application_link}
                     label="Apply Now"
                     isInternal={false}
