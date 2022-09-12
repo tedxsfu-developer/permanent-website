@@ -18,9 +18,9 @@ const TicketPage = () => {
     return (
         <React.Fragment>
             <PageHelmet
-                pageTitle={PageHelmets.speakers.pageTitle}
-                canonical={PageHelmets.speakers.canonical}
-                description={PageHelmets.speakers.description}/>
+                pageTitle={PageHelmets.tickets.pageTitle}
+                canonical={PageHelmets.tickets.canonical}
+                description={PageHelmets.tickets.description}/>
             <PageLayout>
                 <main id='tickets-eventbrite'>
                     <div id="eventbrite-widget-container-416405629447"></div>
