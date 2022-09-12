@@ -22,7 +22,7 @@ const TicketPage = () => {
                 canonical={PageHelmets.tickets.canonical}
                 description={PageHelmets.tickets.description}/>
             <PageLayout>
-                <main id='tickets-eventbrite'>
+                <main id='tickets-eventbrite' className='fade-slide-in'>
                     <h1 className='page-title'>Get Your Tickets To TEDxSFU 2022</h1>
                     <div id="eventbrite-widget-container-416405629447"></div>
                     {useImportScript("../../script/ticket.js")}
