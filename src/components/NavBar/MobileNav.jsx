@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import LinkButton from "../Buttons/LinkButton";
 import arrow_right from "../../images/arrow_forward.svg";
-import Menu from "./Menu";
 import Navigation from "./Navigation";
 import ConferenceInfo from "../../content/conference";
 
 const MobileNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
-    const handleClick = (event) => {
-        event.preventDefault();
-        setShowMenu(!showMenu);
-    }
+    // const handleClick = (event) => {
+    //     event.preventDefault();
+    //     setShowMenu(!showMenu);
+    //     // console.log(`showMenu = ${showMenu}`);
+    // }
 
     useEffect(() => {
         const body = document.querySelector('body');
@@ -32,7 +32,15 @@ const MobileNav = (props) => {
                     <img src={arrow_right} alt="Get your tickets to TEDxSFU 2022 Conference" width="16" height="16"
                          className="filter-white"/>
                 </LinkButton>
-                {!showMenu && <Menu handleClick={handleClick}/>}
+                {/*{!showMenu && <Menu handleClick={handleClick}/>}*/}
+                {/*{!showMenu && <IconButton id="menu"*/}
+                {/*                          imgSrc={hamburger_menu}*/}
+                {/*                          alt="menu"*/}
+                {/*                          label='Menu'*/}
+                {/*                          className={`no-border fade-slide-in ${props.className}`}*/}
+                {/*                          notShowLabel={false}*/}
+                {/*                          handleClick={handleClick}*/}
+                {/*/>}*/}
                 {showMenu && <button id='close-menu' className='all-caps transparent'>Close</button>}
             </div>
             <div className='popup-nav'>

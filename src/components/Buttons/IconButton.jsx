@@ -1,9 +1,9 @@
 import React from "react";
 
 const IconButton = (props) => {
-    const { className, imgSrc, alt, label, notShowLabel, onClick, ...rest } = props;
+    const { className, imgSrc, alt, label, notShowLabel, handleClick, ...rest } = props;
     return (
-        <button className={`all-caps ${className}`} onClick={onClick} {...rest}>
+        <button className={`all-caps ${className}`} onClick={handleClick} {...rest}>
             <img src={imgSrc}
                  alt={alt}
                  width="16"
