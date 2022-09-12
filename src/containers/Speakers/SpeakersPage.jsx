@@ -15,7 +15,7 @@ const SpeakersPage = () => {
             <PageLayout>
                 <main id='speakers'>
                     <h1 className='hidden'>TEDxSFU 2022 Speakers</h1>
-                    <ul className='speaker-list'>
+                    <ul id='speaker-list'>
                         {Speakers.map(speaker =>
                             <li className='speaker-item speaker-container'>
                                 <SpeakerInfo speaker={speaker}/>
