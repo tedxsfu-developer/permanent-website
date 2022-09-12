@@ -6,7 +6,8 @@ import Navigation from "./Navigation";
 
 const DesktopNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
-    const handleClick = () => {
+    const handleClick = (event) => {
+        event.preventDefault();
         setShowMenu(!showMenu);
     }
 

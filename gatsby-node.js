@@ -11,4 +11,13 @@ exports.createPages = async function ({ actions }) {
             },
         });
     });
+    require("./src/content/teamsSecondary").forEach((currentTeamInfo) => {
+        createPage({
+            path: `/team/${currentTeamInfo.id}`,
+            component: teamInfo,
+            context: {
+                teamInfo: currentTeamInfo
+            },
+        });
+    });
 };

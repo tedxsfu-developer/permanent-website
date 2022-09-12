@@ -18,17 +18,19 @@ const TeamMemberBio = ({ member, shouldDisplayImageFirst }) => {
                 <h2>{member.name} ({member.pronoun})</h2>
                 <h3 className='all-caps'>{member.role}</h3>
                 <p className='intro'>{member.bio.intro}</p>
-                <ul className='fun-fact-list'>{member.bio.funFacts.map(funFact =>
-                    <li className='fun-fact-item'>
-                        <img src={dot}
-                             alt='responsibility item'
-                             width="16"
-                             height="16"
-                             className="filter-white"
-                        />
-                        {funFact}
-                    </li>)}
-                </ul>
+                {member.bio.funFacts &&
+                    <ul className='fun-fact-list'>{member.bio.funFacts.map(funFact =>
+                        <li className='fun-fact-item'>
+                            <img src={dot}
+                                 alt='responsibility item'
+                                 width="16"
+                                 height="16"
+                                 className="filter-white"
+                            />
+                            {funFact}
+                        </li>)}
+                    </ul>
+                }
                 {member.socialMedia && Object.keys(member.socialMedia).length > 0 &&
                     <React.Fragment>
                         <p>Follow {member.name} on social media:</p>

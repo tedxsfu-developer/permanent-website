@@ -7,9 +7,9 @@ import ConferenceInfo from "../../content/conference";
 
 const MobileNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
-    const handleClick = () => {
+    const handleClick = (event) => {
+        event.preventDefault();
         setShowMenu(!showMenu);
-        console.log(showMenu);
     }
 
     useEffect(() => {

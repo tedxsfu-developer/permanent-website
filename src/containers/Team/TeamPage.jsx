@@ -5,6 +5,7 @@ import PageLayout from "../../components/PageLayout/PageLayout";
 import DesktopTeamNav from "../../components/TeamNav/DesktopTeamNav";
 
 import Teams from "../../content/teams";
+import TeamsSecondary from "../../content/teamsSecondary";
 import TeamBio from "../../components/TeamBio/TeamBio";
 import MobileTeamNav from "../../components/TeamNav/MobileTeamNav";
 
@@ -31,7 +32,9 @@ const TeamPage = () => {
                         <DesktopTeamNav/>
                         <main id='team' className='horizontally-centered fade-slide-in'>
                             <h1 className='page-title'>Meet the team</h1>
-                            {Teams.map(team => <TeamBio team={team}/>)}
+                            <section className='team-group'>{Teams.map(team => <TeamBio team={team}/>)}</section>
+                            <section className='team-group'>{TeamsSecondary.map(team => <TeamBio
+                                team={team}/>)}</section>
                         </main>
                     </div>
                 }
@@ -40,7 +43,9 @@ const TeamPage = () => {
                         <h1 className='team page-title fade-slide-in'>Meet the team</h1>
                         <MobileTeamNav/>
                         <main id='team' className='horizontally-centered fade-slide-in'>
-                            {Teams.map(team => <TeamBio team={team}/>)}
+                            <section className='team-group'>{Teams.map(team => <TeamBio team={team}/>)}</section>
+                            <section className='team-group'>{TeamsSecondary.map(team => <TeamBio
+                                team={team}/>)}</section>
                         </main>
                     </React.Fragment>
                 }
