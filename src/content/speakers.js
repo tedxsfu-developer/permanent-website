@@ -41,6 +41,8 @@ const Speakers = [
             },
         },
         talk: {
+            shortTopicTitle: 'Automation for All',
+            fullTopicTitle: 'Automation for All',
             shortIntro: 'As a species, we\'ve leveraged and introduced automation in some capacity over the past centuries. These introductions have typically led to shifts and changes in our society.',
             fullIntro: 'As a species, we\'ve leveraged and introduced automation in some capacity over the past centuries. These introductions have typically led to shifts and changes in our society. However, the past decade has led to a rise in not just physical automation but cognitive automation (AI/machine learning) as well. \'How will this change our society? How will it affect how you live and work?',
         },
