@@ -3,11 +3,11 @@ import { Link } from "gatsby";
 
 import Menu from "../../content/menu";
 
-const Navigation = ({ showMenu }) => {
+const Navigation = ({ showMenu, ...rest }) => {
     const pathname = typeof window !== "undefined" ? window.location.pathname : null;
     const [active, setActive] = useState(pathname);
     return (
-        <nav className={`${showMenu ? 'show look-through' : 'display-none'}`}>
+        <nav className={`${showMenu ? 'show look-through' : 'display-none'}`} {...rest}>
             {Menu.map((navItem, index) =>
                 <Link to={navItem.href} key={navItem.id}
                       className={`nav-item ${active === navItem.href ? 'active' : ''}`}

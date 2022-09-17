@@ -15,7 +15,8 @@ const TeamMemberBio = ({ member, shouldDisplayImageFirst }) => {
             {shouldDisplayImageFirst &&
                 <img src={`${member.img.src}`} alt={member.name} width={member.img.width} height={member.img.height}/>}
             <div className='member-info'>
-                <h2>{member.name} ({member.pronoun})</h2>
+                {console.log(member.pronoun)}
+                <h2>{member.name} {member.pronoun ? `(${member.pronoun})` : ''}</h2>
                 <h3 className='all-caps'>{member.role}</h3>
                 <p className='intro'>{member.bio.intro}</p>
                 {member.bio.funFacts &&

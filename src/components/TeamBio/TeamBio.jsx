@@ -10,7 +10,7 @@ const TeamBio = ({ team }) => {
                 <h2>{team.name}</h2>
                 <ul className='member-list'>
                     {team.members.map(member =>
-                        <li className='member-item'>
+                        <li className='member-item' key={member.name}>
                             <p className='member-name'>{member.name} ({member.pronoun})</p>
                             <p className='member-role all-caps'>{member.role}</p>
                         </li>)}
