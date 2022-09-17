@@ -3,8 +3,8 @@ const TeamsSecondary = [
         id: 'coaches',
         name: 'Speaker Coaches',
         img: {
-            src: "/images/team-secondary/coaches/coaches.NEF",
-            width: 4928,
+            src: "/images/team-secondary/coaches/coaches.jpg",
+            width: 5600,
             height: 3264,
         },
         intro: 'TEDxSFU Speaker Coaches work closely with the TEDxSFU Content Development Team, Project Leads, and with each other. Their primary responsibility is to prepare a detailed lesson plan for a minimum of five total speaker coaching sessions. Throughout these sessions, they support each of the TEDxSFU Speakers by helping their talks come to fruition.',
@@ -14,9 +14,9 @@ const TeamsSecondary = [
                 role: 'Speaker Coach',
                 // pronoun: 'she/her',
                 img: {
-                    src: "/images/team-secondary/coaches/mathilde.NEF",
-                    width: 4928,
-                    height: 3264,
+                    src: "/images/team-secondary/coaches/mathilde.jpg",
+                    width: 649,
+                    height: 915,
                 },
                 bio: {
                     intro: 'Mathilde has been a voice teacher for over 20 years and vocal coach to CEOs, Politicians and actors. She has a Theatre Training background. Her regular job as an instructor for Vancouver Film School has given me the opportunity to travel Nationally and Internationally as an ambassador speaking publicly to large groups of people. She has experience working with people of all comfort levels in public speaking. Mathilde works with the nervous system to allow people to recognize how to move out of states of anxiety and is currently completing my Polyvagal Informed Coaching Certificate at the Polyvagal Institute in the US.',
@@ -30,9 +30,9 @@ const TeamsSecondary = [
                 role: 'Speaker Coach',
                 // pronoun: 'she/they',
                 img: {
-                    src: "/images/team-secondary/coaches/barry.NEF",
-                    width: 4928,
-                    height: 3264,
+                    src: "/images/team-secondary/coaches/barry.jpg",
+                    width: 649,
+                    height: 915,
                 },
                 bio: {
                     intro: 'Most of Barry’s career has involved public speaking. Beginning as an on-air radio host and journalist, morphing into a media trainer and communications consultant, and then to his current work facilitating large group training sessions and one-to-one coaching (focused on Leadership training and Career Management tools.  During that time, he has regularly spoken to large audiences in multiple venues as a guest speaker, politician, spokesperson, and podcast host.  Early in his career Barry was heavily involved with Toastmasters International (he founded a Toastmasters club in the Kootenays back in the day).',
@@ -49,8 +49,8 @@ const TeamsSecondary = [
         name: 'Board of Advisors',
         img: {
             src: "/images/team-secondary/boas/boas.png",
-            width: 5000,
-            height: 3347,
+            width: 1920,
+            height: 1080,
         },
         intro: 'TEDxSFU Speaker Coaches work closely with the TEDxSFU Content Development Team, Project Leads, and with each other. Their primary responsibility is to prepare a detailed lesson plan for a minimum of five total speaker coaching sessions. Throughout these sessions, they support each of the TEDxSFU Speakers by helping their talks come to fruition.',
         members: [

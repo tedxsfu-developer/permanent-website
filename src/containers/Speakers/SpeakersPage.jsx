@@ -44,10 +44,7 @@ const SpeakersPage = () => {
             }
         }
 
-
         if (typeof window !== "undefined") {
-            // window.addEventListener('readystatechange', handlePageReload);
-
             window.addEventListener('scroll', handleSpeakerListScroll);
 
             speakerIndicatorItems.forEach((indicator, indicatorIndex) => {
