@@ -2,15 +2,15 @@ import React from "react";
 import hamburger_menu from "../../images/menu.svg";
 import IconButton from "../Buttons/IconButton";
 
-const Menu = (props) => {
+const Menu = ({ handleClick, ...rest }) => {
     return (
-        <IconButton id="menu"
-                    imgSrc={hamburger_menu}
+        <IconButton imgSrc={hamburger_menu}
                     alt="menu"
                     label='Menu'
-                    className={`no-border fade-slide-in ${props.className}`}
+                    className='no-border fade-slide-in'
                     notShowLabel={false}
-                    onClick={props.handleClick}
+                    handleClick={handleClick}
+                    {...rest}
         />
     );
 };
