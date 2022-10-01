@@ -12,7 +12,7 @@ const MobileSpeakerBio = ({ speaker }) => {
     const expandUpButton =
         <IconButton
             imgSrc={expand_up}
-            alt="Read speaker bio"
+            alt="Read speaker's bio and talk intro"
             label="Read bio"
             aria-expanded="false"
             aria-controls={speaker.name}
@@ -23,7 +23,7 @@ const MobileSpeakerBio = ({ speaker }) => {
     const expandDownButton =
         <IconButton
             imgSrc={expand_down}
-            alt="Close speaker bio"
+            alt="Close speaker's bio and talk intro"
             label="Close bio"
             aria-expanded="true"
             aria-controls={speaker.name}
@@ -46,16 +46,18 @@ const MobileSpeakerBio = ({ speaker }) => {
                      onKeyDown={handleBioClick}
             >
                 {!isExpanded && expandUpButton}
-                {isExpanded && speaker.talk.shortTopicTitle &&
-                    <h2 className='talk-title'>{speaker.talk.fullTopicTitle}</h2>}
-                {!isExpanded && speaker.talk.shortTopicTitle &&
-                    <h2 className='talk-title'>{speaker.talk.shortTopicTitle}</h2>}
+                {speaker.talk.title &&
+                    <h2 className='talk-title'>{speaker.talk.title}</h2>}
                 <div>
-                    <h2 className='speaker-name'>{speaker.name}</h2>
+                    <h2 className='speaker-name'>{speaker.name} ({speaker.pronouns})</h2>
                     <h3 className='all-caps speaker-title'>{speaker.title}</h3>
                 </div>
-                {isExpanded && <p className='intro'>{speaker.talk.fullIntro}</p>}
-                {!isExpanded && <p className='intro'>{speaker.talk.shortIntro}</p>}
+                {isExpanded &&
+                    <React.Fragment>
+                        <p className='bio'>{speaker.bio}</p>
+                        <p className='intro'>{speaker.talk.intro}</p>
+                    </React.Fragment>
+                }
                 {isExpanded && expandDownButton}
             </article>
         </React.Fragment>

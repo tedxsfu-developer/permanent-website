@@ -16,33 +16,33 @@ const DesktopSpeakerBio = ({ speaker }) => {
                  className='full-screen'/>
             <div className='bio-container'>
                 <article className='speaker-bio collapsed'>
-                    {speaker.talk.shortTopicTitle &&
-                        <h2 className='talk-title'>{speaker.talk.shortTopicTitle}</h2>}
+                    {speaker.talk.title &&
+                        <h2 className='talk-title'>{speaker.talk.title}</h2>}
                     <div>
-                        <h2 className='speaker-name'>{speaker.name}</h2>
+                        <h2 className='speaker-name'>{speaker.name} ({speaker.pronouns})</h2>
                         <h3 className='all-caps speaker-title'>{speaker.title}</h3>
                     </div>
-                    <p className='intro'>{speaker.talk.shortIntro}</p>
+                    <p className='bio'>{speaker.bio}</p>
                 </article>
                 {!isExpanded &&
                     <button className='talk-intro-toggle open all-caps' onClick={handleIntroClick}>
-                        Read full intro
+                        Read talk intro
                     </button>
                 }
                 {isExpanded &&
                     <button className='talk-intro-toggle close all-caps' onClick={handleIntroClick}>
-                        Close full intro
+                        Close talk intro
                     </button>
                 }
                 {isExpanded &&
                     <article className='speaker-bio expanded full-talk-intro'>
-                        {speaker.talk.shortTopicTitle &&
-                            <h2 className='talk-title'>{speaker.talk.fullTopicTitle}</h2>}
+                        {speaker.talk.title &&
+                            <h2 className='talk-title'>{speaker.talk.title}</h2>}
                         <div>
                             <h2 className='speaker-name'>{speaker.name}</h2>
                             <h3 className='all-caps speaker-title'>{speaker.title}</h3>
                         </div>
-                        <p className='intro'>{speaker.talk.fullIntro}</p>
+                        <p className='intro'>{speaker.talk.intro}</p>
                     </article>
                 }
             </div>
