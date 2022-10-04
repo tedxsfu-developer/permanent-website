@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import LinkButton from "../Buttons/LinkButton";
 import arrow_right from "../../images/arrow_forward.svg";
 import Navigation from "./Navigation";
@@ -6,21 +6,21 @@ import ConferenceInfo from "../../content/conference";
 import Menu from "./Menu";
 
 const MobileNav = (props) => {
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
     const handleClick = (event) => {
         // event.preventDefault();
         setShowMenu(showMenu => !showMenu);
         // console.log(`showMenu = ${showMenu}`);
     }
 
-    useEffect(() => {
-        const body = document.querySelector('body');
-        body.addEventListener('click', (event) => {
-            if (showMenu) {
-                setShowMenu(false);
-            }
-        })
-    }, [showMenu]);
+    // useEffect(() => {
+    //     const body = document.querySelector('body');
+    //     body.addEventListener('click', (event) => {
+    //         if (showMenu) {
+    //             setShowMenu(false);
+    //         }
+    //     })
+    // }, [showMenu]);
 
     return (
         <div id='mobile-nav' className={`fade-slide-in${showMenu ? ' full-screen' : ''}`}>
