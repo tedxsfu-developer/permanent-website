@@ -6,7 +6,7 @@ import ConferenceInfo from "../../content/conference";
 import Menu from "./Menu";
 
 const MobileNav = (props) => {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
     const handleClick = (event) => {
         // event.preventDefault();
         setShowMenu(showMenu => !showMenu);
@@ -50,13 +50,12 @@ const MobileNav = (props) => {
                         <p className='opaque-text'>{ConferenceInfo.venue}</p>
                     </div>
                 }
-                {showMenu &&
-                    <Navigation
-                        id='menu'
-                        aria-labelledby='menu-toggle'
-                        aria-hidden={!showMenu}
-                        showMenu={showMenu}
-                    />
+                <Navigation
+                    id='menu'
+                    aria-labelledby='menu-toggle'
+                    aria-hidden={!showMenu}
+                    showMenu={showMenu}
+                />
                 }
             </div>
         </div>

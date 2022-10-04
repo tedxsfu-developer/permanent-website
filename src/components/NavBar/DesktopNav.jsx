@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import Menu from "./Menu";
 
 const DesktopNav = (props) => {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
     const handleClick = (event) => {
         // event.preventDefault();
         setShowMenu(showMenu => !showMenu);
@@ -37,14 +37,12 @@ const DesktopNav = (props) => {
                 aria-controls='menu'
                 aria-expanded={showMenu}
                 handleClick={handleClick}/>
-            {showMenu &&
-                <Navigation
-                    id='menu'
-                    aria-labelledby='menu-toggle'
-                    aria-hidden={!showMenu}
-                    showMenu={showMenu}
-                />
-            }
+            <Navigation
+                id='menu'
+                aria-labelledby='menu-toggle'
+                aria-hidden={!showMenu}
+                showMenu={showMenu}
+            />
         </div>
     );
 };
