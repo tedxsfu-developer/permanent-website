@@ -17,17 +17,18 @@ const Menu = [
         subtitle: "The team behind the conference",
         href: '/team/',
     },
-    // {
-    //     id: "sponsor",
-    //     title: "Sponsors",
-    //     subtitle: "Supporters of TEDxSFU",
-    // },
     {
-        id: "partner",
-        title: "Partner With Us",
-        subtitle: "Venue, speakers and schedule info",
-        href: '/partner/',
+        id: "sponsor",
+        title: "Sponsors",
+        subtitle: "Supporters of TEDxSFU",
+        href: '/sponsors',
     },
+    // {
+    //     id: "partner",
+    //     title: "Partner With Us",
+    //     subtitle: "Venue, speakers and schedule info",
+    //     href: '/partner/',
+    // },
     // {
     //     id: "legacy",
     //     title: "Legacy",

@@ -26,13 +26,37 @@ a#contact-pr
   width: 100%
   text-align: center
 
+section#past-sponsors
+  ul
+    max-width: $paragraph-max-width
+    margin-top: 1.5rem
+    display: grid
+
+  li
+    list-style: none
+    width: 100%
+    max-width: 100%
+
+    img
+      width: 100%
+      max-width: 100%
+      height: auto
+
 @media only screen and (max-width: 20rem)
   main#partner-with-us
     padding: 0 1rem
 
+    section#past-sponsors ul
+      grid-template-columns: 1fr
+      grid-row-gap: 1.5rem
+
 @media only screen and (min-width: 20rem)
   main#partner-with-us
     padding: 0 2rem
+
+    section#past-sponsors ul
+      grid-template-columns: 1fr
+      grid-row-gap: 1.5rem
 
     h1
       margin-top: 8rem
@@ -48,6 +72,12 @@ a#contact-pr
     border-bottom: none
     padding-bottom: 0
 
+@media only screen and (min-width: 36rem)
+  main#partner-with-us
+    section#past-sponsors ul
+      grid-template-columns: 1fr 1fr
+      grid-column-gap: 1rem
+
 @media only screen and (min-width: 48rem)
   main#partner-with-us
     margin: 0 auto 8rem
@@ -55,3 +85,7 @@ a#contact-pr
 
     h1
       margin-top: 12rem
+
+    section#past-sponsors ul
+      grid-template-columns: 1fr 1fr 1fr 1fr
+      grid-column-gap: 1.5rem

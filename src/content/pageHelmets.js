@@ -27,6 +27,11 @@ const PageHelmets = {
         'https://www.tedxsfu.com/partner',
         'Connect with your target audience through shared values and interests engagingly and thoughtfully. The TEDxSFU Conference is our signature event driven by ideas worth spreading. Every year over 300 people attend in support of our mission.'
     ),
+    sponsors: buildPageHelmet(
+        'Our Partners',
+        'https://www.tedxsfu.com/sponsors',
+        'We\'ve partnered with these amazing organizations and businesses to make TEDxSFU happen this year.'
+    ),
     team: buildPageHelmet(
         'Meet The Team',
         'https://www.tedxsfu.com/team',

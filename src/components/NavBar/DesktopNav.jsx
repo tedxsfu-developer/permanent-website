@@ -7,9 +7,7 @@ import Menu from "./Menu";
 const DesktopNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
     const handleClick = (event) => {
-        // event.preventDefault();
         setShowMenu(showMenu => !showMenu);
-        // console.log(`showMenu = ${showMenu}`);
     }
 
     // useEffect(() => {

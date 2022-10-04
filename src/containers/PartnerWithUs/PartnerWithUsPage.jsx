@@ -7,6 +7,7 @@ import CtaButton from "../../components/Buttons/CtaButton";
 import PartnershipBenefitsTable from "../../components/PartnershipBenefitsTable/PartnershipBenefitsTable";
 import PageLayout from "../../components/PageLayout/PageLayout";
 import SimpleTextLink from "../../components/SimpleTextLink/SimpleTextLink";
+import pastSponsors from "../../content/pastSponsors";
 
 const PartnerWithUsPage = () => {
     const convertToParagraphList = (rawText) => {
@@ -30,9 +31,18 @@ const PartnerWithUsPage = () => {
                         {overviewParagraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                     </section>
 
-                    {/*<section id="past-sponsors" className='partner-info'>*/}
-                    {/*    <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>*/}
-                    {/*</section>*/}
+                    <section id="past-sponsors" className='partner-info'>
+                        <h2 className="all-caps">{PartnerWithUs.pastSponsors.title}</h2>
+                        <ul>
+                            {pastSponsors.map((sponsor, index) =>
+                                <li key={sponsor.name}><img src={sponsor.logo.src}
+                                                            alt={sponsor.name}
+                                                            width={sponsor.logo.width}
+                                                            height={sponsor.logo.height}/>
+                                </li>
+                            )}
+                        </ul>
+                    </section>
 
                     <section id="our-audience" className='partner-info'>
                         <h2 className="all-caps">{PartnerWithUs.audience.title}</h2>
