@@ -8,7 +8,7 @@ const DesktopNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
     const handleClick = (event) => {
         // event.preventDefault();
-        setShowMenu(prevState => !prevState);
+        setShowMenu(showMenu => !showMenu);
         // console.log(`showMenu = ${showMenu}`);
     }
 
@@ -37,11 +37,14 @@ const DesktopNav = (props) => {
                 aria-controls='menu'
                 aria-expanded={showMenu}
                 handleClick={handleClick}/>
-            <Navigation
-                id='menu'
-                aria-labelledby='menu-toggle'
-                showMenu={showMenu}
-            />
+            {showMenu &&
+                <Navigation
+                    id='menu'
+                    aria-labelledby='menu-toggle'
+                    aria-hidden={!showMenu}
+                    showMenu={showMenu}
+                />
+            }
         </div>
     );
 };

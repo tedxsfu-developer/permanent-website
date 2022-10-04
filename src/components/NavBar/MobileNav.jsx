@@ -9,7 +9,7 @@ const MobileNav = (props) => {
     const [showMenu, setShowMenu] = useState(false);
     const handleClick = (event) => {
         // event.preventDefault();
-        setShowMenu(prevState => !prevState);
+        setShowMenu(showMenu => !showMenu);
         // console.log(`showMenu = ${showMenu}`);
     }
 
@@ -50,11 +50,14 @@ const MobileNav = (props) => {
                         <p className='opaque-text'>{ConferenceInfo.venue}</p>
                     </div>
                 }
-                <Navigation
-                    id='menu'
-                    aria-labelledby='menu-toggle'
-                    showMenu={showMenu}
-                />
+                {showMenu &&
+                    <Navigation
+                        id='menu'
+                        aria-labelledby='menu-toggle'
+                        aria-hidden={!showMenu}
+                        showMenu={showMenu}
+                    />
+                }
             </div>
         </div>
     );
