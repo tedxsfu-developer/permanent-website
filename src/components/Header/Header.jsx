@@ -11,8 +11,11 @@ const Header = (props) => {
 
     useEffect(() => {
         const controlHeader = () => {
+            console.log(window.scrollY);
             if (typeof window !== 'undefined') {
-                if (window.scrollY > lastScrollY) {
+                if (window.scrollY <= 0) {
+                    setShow(true);
+                } else if (window.scrollY > lastScrollY) {
                     setShow(false);
                 } else {
                     setShow(true);
