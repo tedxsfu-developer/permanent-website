@@ -39,7 +39,8 @@ const MobileNav = (props) => {
                         aria-expanded={showMenu}
                         handleClick={handleClick}/>
                 }
-                {showMenu && <button id='close-menu' className='all-caps transparent'>Close</button>}
+                {showMenu &&
+                    <button id='close-menu' className='all-caps transparent' onClick={handleClick}>Close</button>}
             </div>
             <div className='popup-nav'>
                 {showMenu &&
@@ -54,7 +55,6 @@ const MobileNav = (props) => {
                     aria-hidden={!showMenu}
                     showMenu={showMenu}
                 />
-                }
             </div>
         </div>
     );

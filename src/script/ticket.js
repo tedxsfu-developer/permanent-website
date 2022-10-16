@@ -1,5 +1,6 @@
 'use strict';
-var exampleCallback = function () {
+
+const exampleCallback = function () {
     console.log('Order complete!');
 };
 

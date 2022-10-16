@@ -4,9 +4,15 @@ const StickyNotification = ({ children }) => {
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
+    const REM_UNIT = 16;
+    let isDesktop = false;
+    if (typeof window !== 'undefined' && window.innerWidth >= 64 * REM_UNIT) {
+        isDesktop = true;
+    }
+
     useEffect(() => {
         const controlStickyNotification = () => {
-            if (typeof window !== 'undefined') {
+            if (typeof window !== 'undefined' && !isDesktop) {
                 if (window.scrollY > lastScrollY) {
                     setShow(false);
                 } else {
@@ -25,7 +31,7 @@ const StickyNotification = ({ children }) => {
     }, [lastScrollY]);
 
     return (
-        <div id="notification" {...(!show && { className: 'hidden look-through' })}>{children}</div>
+        <div id="notification" className={`look-through ${!show && 'hidden'}`}>{children}</div>
     );
 }
 
