@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SimpleTextLink from "../SimpleTextLink/SimpleTextLink";
 
 const StickyNotification = ({ children }) => {
     const [show, setShow] = useState(true);
@@ -31,7 +32,13 @@ const StickyNotification = ({ children }) => {
     }, [lastScrollY]);
 
     return (
-        <div id="notification" className={`look-through fade-slide-in ${!show && 'hidden'}`}>{children}</div>
+        <div id="notification" className={`look-through fade-slide-in ${!show && 'hidden'}`}>
+            <p>Ticket sales close on Monday, October 31, 11:59pm. <SimpleTextLink
+                link="/tickets"
+                isInternal={true}
+                shouldOpenInNewTab={false}
+            >Grab your tickets before it's too late!</SimpleTextLink></p>
+        </div>
     );
 }
 

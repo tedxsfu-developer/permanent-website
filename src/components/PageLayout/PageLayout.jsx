@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import MobileNav from "../NavBar/MobileNav";
 import StickyNotification from "../StickyNotification/StickyNotification";
-import SimpleTextLink from "../SimpleTextLink/SimpleTextLink";
 
 const PageLayout = (props) => {
     const REM_UNIT = 16; //1rem = 16px
@@ -13,11 +12,7 @@ const PageLayout = (props) => {
         if (viewportWidth >= 64 * REM_UNIT) {
             pageLayout = (
                 <React.Fragment>
-                    <StickyNotification><p>Ticket sales close on Sunday, October 23, 11:59pm. <SimpleTextLink
-                        link="/tickets"
-                        isInternal={true}
-                        shouldOpenInNewTab={false}
-                    >Grab your tickets before it's too late!</SimpleTextLink></p></StickyNotification>
+                    <StickyNotification/>
                     <Header/>
                     {props.children}
                     <Footer/>
@@ -26,11 +21,7 @@ const PageLayout = (props) => {
         } else {
             pageLayout = (
                 <React.Fragment>
-                    <StickyNotification><p>Ticket sales close on Sunday, October 23, 11:59pm. <SimpleTextLink
-                        link="/tickets"
-                        isInternal={true}
-                        shouldOpenInNewTab={false}
-                    >Grab your tickets before it's too late!</SimpleTextLink></p></StickyNotification>
+                    <StickyNotification/>
                     <Header/>
                     <MobileNav/>
                     {props.children}
