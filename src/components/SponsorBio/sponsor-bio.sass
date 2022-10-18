@@ -1,9 +1,11 @@
 li.sponsor-bio
   list-style: none
 
-  img
+  .full-width
     width: 100%
     max-width: 100%
+
+  img.full-width
     height: auto
     align-self: center
 
@@ -11,15 +13,26 @@ li.sponsor-bio
     text-align: center
     margin-top: 0.5rem
     align-self: start
+    font-weight: 500
+
+a.sponsor-link
+  margin-top: 1rem
+
 
 @media only screen and (min-width: 20rem)
   li.sponsor-bio
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+    margin-top: 2rem
+
+    .profile
+      display: flex
+      flex-direction: column
+      justify-content: space-between
 
 @media only screen and (min-width: 48rem)
-  li.sponsor-bio
+  li.sponsor-bio .profile, li.sponsor-bio
     display: grid
-    grid-template-rows: 2fr 1fr
+    grid-template-rows: 3fr 1fr
     grid-row-gap: 0.5rem
+
+  li.sponsor-bio, a.sponsor-link
+    margin-top: 0

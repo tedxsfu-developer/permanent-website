@@ -10,7 +10,7 @@ const Sponsors = {
                     width: '2043',
                     height: '321',
                 },
-                website: '',
+                website: 'https://www.sfu.ca/woodwards-cultural-programs.html',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -29,7 +29,7 @@ const Sponsors = {
                     width: '601',
                     height: '114',
                 },
-                website: '',
+                website: 'https://beedie.sfu.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -43,7 +43,7 @@ const Sponsors = {
                     width: '601',
                     height: '142',
                 },
-                website: '',
+                website: 'https://www.sfu.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -62,7 +62,7 @@ const Sponsors = {
                     width: '1466',
                     height: '210',
                 },
-                website: '',
+                website: 'https://www.sfu.ca/alumni.html',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -76,7 +76,7 @@ const Sponsors = {
                     width: '1155',
                     height: '450',
                 },
-                website: '',
+                website: 'https://www.scotiabank.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -100,7 +100,7 @@ const Sponsors = {
                     width: '169',
                     height: '116',
                 },
-                website: '',
+                website: 'https://oldspaghettifactory.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -113,7 +113,7 @@ const Sponsors = {
                     width: '750',
                     height: '750',
                 },
-                website: '',
+                website: 'https://www.bpgroupcan.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -126,7 +126,7 @@ const Sponsors = {
                     width: '672',
                     height: '904',
                 },
-                website: '',
+                website: 'https://www.nelsontheseagull.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -139,7 +139,7 @@ const Sponsors = {
                     width: '2411',
                     height: '2922',
                 },
-                website: '',
+                website: 'https://steamworks.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -152,7 +152,7 @@ const Sponsors = {
                     width: '1458',
                     height: '1250',
                 },
-                website: '',
+                website: 'https://www.stevespokebar.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -165,7 +165,7 @@ const Sponsors = {
                     width: '875',
                     height: '740',
                 },
-                website: '',
+                website: 'https://groundsforcoffee.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -178,7 +178,7 @@ const Sponsors = {
                     width: '484',
                     height: '226',
                 },
-                website: '',
+                website: 'https://museumofvancouver.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -191,7 +191,7 @@ const Sponsors = {
                     width: '250',
                     height: '249',
                 },
-                website: '',
+                website: 'https://eatmeet.ca/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -204,7 +204,7 @@ const Sponsors = {
                     width: '1000',
                     height: '1000',
                 },
-                website: '',
+                website: 'https://catoropets.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -217,7 +217,7 @@ const Sponsors = {
                     width: '1297',
                     height: '1097',
                 },
-                website: '',
+                website: 'https://modoyoga.com/vancouver/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -230,7 +230,7 @@ const Sponsors = {
                     width: '5906',
                     height: '2363',
                 },
-                website: '',
+                website: 'https://chatime.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -243,7 +243,7 @@ const Sponsors = {
                     width: '2237',
                     height: '810',
                 },
-                website: '',
+                website: 'https://www.mitacs.ca/en',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -256,7 +256,7 @@ const Sponsors = {
                     width: '4626',
                     height: '741',
                 },
-                website: '',
+                website: 'https://www.panago.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',
@@ -269,7 +269,7 @@ const Sponsors = {
                     width: '1212',
                     height: '1257',
                 },
-                website: '',
+                website: 'https://www.vnysa.com/',
                 socialMedia: {
                     instagram: '',
                     facebook: '',

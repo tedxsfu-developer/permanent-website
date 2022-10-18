@@ -31,7 +31,7 @@ const StickyNotification = ({ children }) => {
     }, [lastScrollY]);
 
     return (
-        <div id="notification" className={`look-through ${!show && 'hidden'}`}>{children}</div>
+        <div id="notification" className={`look-through fade-slide-in ${!show && 'hidden'}`}>{children}</div>
     );
 }
 
