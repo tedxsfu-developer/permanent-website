@@ -112,7 +112,7 @@ const Speakers = [
         name: 'Precious Ile',
         pronouns: 'She/Her',
         title: 'Co-Founder and Partner, Impact Plus Consulting',
-        bio: 'Precious Ile is a community builder, storyteller, and engagement consultant. She focuses on cultivating genuine relationships with her personal and professional connections - which is the heart of networking. She has a unique ability to spark authentic conversations with just anyone she meets. To Precious, reflection centres on taking a moment to embrace your unique journey including the positive and challenging life experiences. It\'s about being you, listening for transferrable learnings from your experiences, and finding connections in your story and the stories of the people you meet.',
+        bio: 'Precious Ile is a community builder, storyteller, and management consultant. She focuses on cultivating genuine relationships with her personal and professional connections - which is the heart of networking. She has a unique ability to spark authentic conversations with just anyone she meets. To Precious, reflection centres on taking a moment to embrace your unique journey including the positive and challenging life experiences. It\'s about being you, listening for transferrable learnings from your experiences, and finding connections in your story and the stories of the people you meet.',
         img: {
             desktop: {
                 src: "/images/speakers/desktop/precious.png",

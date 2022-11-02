@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import MobileNav from "../NavBar/MobileNav";
-import StickyNotification from "../StickyNotification/StickyNotification";
 
 const PageLayout = (props) => {
     const REM_UNIT = 16; //1rem = 16px
@@ -12,7 +11,7 @@ const PageLayout = (props) => {
         if (viewportWidth >= 64 * REM_UNIT) {
             pageLayout = (
                 <React.Fragment>
-                    <StickyNotification/>
+                    {/*<StickyNotification/>*/}
                     <Header/>
                     {props.children}
                     <Footer/>
@@ -21,7 +20,7 @@ const PageLayout = (props) => {
         } else {
             pageLayout = (
                 <React.Fragment>
-                    <StickyNotification/>
+                    {/*<StickyNotification/>*/}
                     <Header/>
                     <MobileNav/>
                     {props.children}
