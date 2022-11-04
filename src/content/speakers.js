@@ -103,7 +103,7 @@ const Speakers = [
             // fullTopicTitle: 'Carving a seemingly unlikely legal career out of your passion',
             // shortIntro: 'Rebeka will reflect on staying true to her lifelong passion for animal rights by creating a seemingly unlikely legal career, in the face of institutional and societal challenges.',
             // fullIntro: 'It is possible to create a career out of one’s passion. Rebeka will reflect on staying true to her lifelong passion for animal rights by creating a seemingly unlikely legal career, in the face of institutional and societal challenges. She would like to explain what the practice of animal law now looks like, 15 years later. Rebeka would like to encourage others to not let anyone tell them that “you’re too idealistic” or to bring them down in other ways. Nothing can stop you if you have the passion, motivation and courage.',
-            title: 'Passionately carving an unlikely legal career - Animal Law lawyer',
+            title: 'Passionately carving an unlikely legal career - Animal Law Lawyer',
             intro: 'Do animals have a voice in court? Do animals have any rights in our legal system? Rebeka will reflect on her lifelong journey on becoming an animal law lawyer. A legal field that was barely known until only recently. She will explore some of the institutional, societal, and personal barriers she has faced while trying to give a voice to beings not yet fully recognized in our legal system. Rebeka hopes her talk will encourage others to never give up on developing a career that is true to one’s passion.',
         },
     },
@@ -142,12 +142,12 @@ const Speakers = [
         bio: 'Pam is a lawyer and criminologist by training, an educator and advocate by passion. Always a ball of energy, Pam thrives on empowering others to think critically about everything and anything. To Pam, the idea of “reflection” is rooted in our ability to think critically, be compassionate, and drive impactful change. For the past decade she has been teaching about wrongful convictions at leading universities across Canada, and she has made it her goal to incorporate wrongful convictions into every course she teaches. Pam advocates for a holistic approach to wrongful convictions beyond the impact on our criminal justice system, with more focus on the human impact. She is fiercely passionate about changing how we understand wrongful convictions and prioritizing the wrongfully convicted themselves as humans and individuals first.',
         img: {
             desktop: {
-                src: "/images/speakers/desktop/pamela.png",
+                src: "/images/speakers/desktop/pamela.jpeg",
                 width: 1920,
                 height: 1080,
             },
             mobile: {
-                src: "/images/speakers/mobile/pamela.png",
+                src: "/images/speakers/mobile/pamela.jpeg",
                 width: 1024,
                 height: 1366,
             },

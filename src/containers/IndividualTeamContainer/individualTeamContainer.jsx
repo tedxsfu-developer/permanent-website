@@ -26,11 +26,16 @@ const IndividualTeamContainer = ({ pageContext }) => {
                     </div>
                     <p className='team-intro'>{teamInfo.intro}</p>
                     {teamInfo.members.map((member, index) => {
-                            if (index % 2 === 0) {
-                                return <TeamMemberBio member={member} shouldDisplayImageFirst={true}/>
-                            } else {
-                                return <TeamMemberBio member={member} shouldDisplayImageFirst={false}/>
+                            let shouldDisplayImageFirst = true;
+                            if (typeof window !== "undefined") {
+                                const REM_UNIT = 16;
+                                const viewportWidth = window.innerWidth;
+                                const isDesktop = viewportWidth >= 48 * REM_UNIT;
+                                if (isDesktop) {
+                                    shouldDisplayImageFirst = index % 2 === 0;
+                                }
                             }
+                            return <TeamMemberBio member={member} shouldDisplayImageFirst={shouldDisplayImageFirst}/>
                         }
                     )}
                 </main>

@@ -45,6 +45,32 @@ const TeamsSecondary = [
         ]
     },
     {
+        id: 'mc',
+        name: 'Master of Ceremonies (MC)',
+        img: {
+            src: "/images/team-secondary/mc/rose_landscape.jpeg",
+            width: 1920,
+            height: 1080,
+        },
+        intro: 'Rose Anza-Burgess is the MC of our TEDxSFU 2022 Conference.',
+        members: [
+            {
+                name: 'Rose Anza-Burgess',
+                role: 'Master of Ceremonies (MC)',
+                pronoun: 'She/They',
+                img: {
+                    src: "/images/team-secondary/mc/rose_portrait.jpeg",
+                    width: 1000,
+                    height: 1500,
+                },
+                bio: {
+                    intro: 'Rose Anza-Burgess is an unfolding writer, artist, and scholar. Her work weaves in and out of academic and creative discourse, exploring the boundaries of performance. She works as a Speech Arts Instructor at Shadbolt Centre for the Arts, as well as an Academic Advisor, and Non-Faculty Member of the Board of Governors, at Capilano University. She is an alumna of SFU’s School for the Contemporary Arts, and former TEDxSFU speaker and coach. Above all, she is a dedicated spouse with a big family who teaches her about love, life, and humility.'
+                },
+                socialMedia: {}
+            },
+        ]
+    },
+    {
         id: 'boa',
         name: 'Board of Advisors',
         img: {
@@ -66,9 +92,7 @@ const TeamsSecondary = [
                 bio: {
                     intro: 'Sara Milosavic is an SFU grad with a degree in Interactive Arts and Technology and has worked for numerous companies such as SFU, Fraser Health and Telus Health. She is currently studying to become a Compositor. Sara has worked with TEDxSFU for three years in creative roles, and was most recently the Project Lead for TEDxSFU 2021: Bloom. Sara loves reading, traveling, and meeting new people to expand her mindset and push herself out of her comfort zone!'
                 },
-                // socialMedia: {
-                //     website: 'https://myvoicecoach.org/',
-                // }
+                socialMedia: {}
             },
             {
                 name: 'Vivian Wong',
@@ -82,10 +106,7 @@ const TeamsSecondary = [
                 bio: {
                     intro: 'Vivian is a fifth year Health Sciences student who\'s completing a Certificate of Entrepreneurship & Innovation and is part of the Tech-E @SFU program. She has been a part of TEDxSFU for three years, starting as a Content Development Coordinator, Director of Internal Relations, and most recently Co-Project Lead for TEDxSFU 2021. In her free time, she loves to watch Formula 1, volunteer for nonprofits, and cook up a storm! '
                 },
-                // socialMedia: {
-                //     linkedin: 'https://www.linkedin.com/in/barryforward/',
-                //     website: 'https://www.buzzsprout.com/1095527',
-                // }
+                socialMedia: {}
             },
             {
                 name: 'Nhi Nguyen',
@@ -99,9 +120,7 @@ const TeamsSecondary = [
                 bio: {
                     intro: 'Nhi Nguyen was the Project Lead for TEDxSFU 2020 and now she is the advisor supporting the TEDxSFU 2022 team. She is currently working as the User Experience Designer at Avanade and looking forward to seeing an amazing TEDxSFU 2022 event.'
                 },
-                // socialMedia: {
-                //     website: 'https://myvoicecoach.org/',
-                // }
+                socialMedia: {}
             },
             {
                 name: 'Anthony Virdo',
@@ -115,9 +134,7 @@ const TeamsSecondary = [
                 bio: {
                     intro: 'Anthony is a public speaker, facilitator, and mentor on the subject of emotional intelligence and personal leadership. Currently working at Langara College, he coordinates student clubs and orientation & transition programming for new and returning students. Anthony’s involvement with TEDxSFU began as the Master of Ceremonies for the conference in 2019, serving as Executive Director during the pandemic in 2020, he has continued to sit on the Board of Advisors throughout 2021 and 2022. A TEDx speaker himself, “The Consequences of Old Beliefs Operating in the Background,” Anthony is intimately aware of the investment of time and energy that goes into a TEDx talk. The transformation that occurs over the project within each member of the organization is massive. Anthony is inspired by the hard work and dedication of the organizing committee and speakers. Please enjoy this labor of love brought to you by the TEDxSFU2022 Organizing Committee.'
                 },
-                // socialMedia: {
-                //     website: 'https://myvoicecoach.org/',
-                // }
+                socialMedia: {}
             },
         ]
     },
@@ -143,9 +160,7 @@ const TeamsSecondary = [
                 bio: {
                     intro: 'Bernhard is Professor and directs the iSpace Lab at SFU’s School of Interactive Arts and Technology (SIAT). He likes to go beyond traditional disciplinary boundaries, combining natural sciences approaches (being a physicist by training) with human-centered and creative approaches (drawing from Psychology, Cognitive Science, Meditation, HCI, Design, and Art) using immersive Virtual Reality (VR). Bernhard currently teaches classes on immersive environments/Virtual Reality, game design, and research methods. Fun fact: While speaker coaching for TEDxSFU he also gave a TEDx talk on “Could Virtual Reality make us more human?” at TEDxEastVan to experience the speaker coaching process from both sides.'
                 },
-                // socialMedia: {
-                //     website: 'https://myvoicecoach.org/',
-                // }
+                socialMedia: {}
             },
         ]
     },

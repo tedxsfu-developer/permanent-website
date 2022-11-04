@@ -68,7 +68,6 @@ ul#speaker-list-indicator
     margin-bottom: 8rem
 
   ul#speaker-list-indicator
-    bottom: 8rem
     left: 50%
     right: revert
     top: revert
@@ -82,3 +81,11 @@ ul#speaker-list-indicator
       width: 2rem
       height: 0.25rem
       margin-right: 1rem
+
+  @media (max-height: 60rem)
+    ul#speaker-list-indicator
+      bottom: 4rem
+
+  @media (min-height: 60rem)
+    ul#speaker-list-indicator
+      bottom: 8rem
