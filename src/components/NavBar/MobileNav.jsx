@@ -23,12 +23,12 @@ const MobileNav = (props) => {
     return (
         <div id='mobile-nav' className={`fade-slide-in${showMenu ? ' full-screen' : ''}`}>
             <div className='fixed-container look-through'>
-                <LinkButton link="/tickets"
-                            label="Get Tickets"
+                <LinkButton link="/opportunity"
+                            label="Opportunities"
                             isInternal={true}
                             className='transparent'
                 >
-                    <img src={arrow_right} alt="Get your tickets to TEDxSFU 2022 Conference" width="16" height="16"
+                    <img src={arrow_right} alt="Explore opportunities with TEDxSFU" width="16" height="16"
                          className="filter-white"/>
                 </LinkButton>
                 {!showMenu &&

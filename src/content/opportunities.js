@@ -1,5 +1,47 @@
 const Opportunities = [
     {
+        id: "pl",
+        role: "Executive Director",
+        application_period: "December 12-30, 2022",
+        description: {
+            overview: {
+                title: "Position Overview",
+                content: "TEDxSFU is looking for energetic, enthusiastic individuals to take on the role of Executive Directors for the 13th annual TEDxSFU conference! The Executive Directors will be responsible for overseeing all planning processes for the conference, ensuring the smooth operation of all team departments (i.e. Marketing, Partner Relations, Creative, Web Development, Content Development, Internal Operations & Events). The successful candidates will have an undeniable passion for TEDx and, of course, the notion of ideas worth spreading. They’ll also be highly detail-oriented, creative thinkers with a knack for problem solving through collaboration. There will be an extensive turnover training process for the successful individual to ensure smooth and comfortable transition. Must be a current SFU student or recent alumni (graduated within the past two years).",
+                time_commitment: {
+                    title: "Time Commitment",
+                    content: "January 2023 - February 2024.",
+                },
+            },
+            responsibilities: {
+                title: "Responsibilities",
+                content: [
+                    "Oversee the entire Organizing Committee (~20 individuals) throughout all planning processes for the 13th annual TEDxSFU conference with accommodations for COVID-19 restrictions (if applicable)",
+                    "Design and execute a strategy to interview and hire qualifying candidates for the Organizing Committee",
+                    "Actively engage in planning processes through contributing ideas and incorporating feedback in order to ensure a positive team environment and experience",
+                    "Conduct weekly team meetings; including, but not limited to, creating meeting agendas, establishing deadlines, delegating tasks, and ensuring the progression of planning process",
+                    "Ensure that team deliverables leading up to the conference are delivered on-time, within scope, and within budget",
+                    "Maintain strong relationships with external organizations & stakeholders",
+                    "Create a Board of Advisors",
+                ]
+            },
+            skills_and_experiences: {
+                title: "Qualifications",
+                content: [
+                    "Effective leadership skills to motivate a team of individuals with varying personalities and expertise",
+                    "Strong verbal and written communication skills",
+                    "Strong interpersonal skills and willingness to collaborate with and support all members of the Organizing Committee",
+                    "Solid organizational skills and planning expertise, including attention to detail and effective time management skills",
+                    "Able to use creativity and problem-solving skills to adapt to unexpected changes in requirements and/or scope",
+                    "Previous project and/or event management experience considered an asset",
+                    "Experience managing budgets considered an asset",
+                    "Recent group work experience in a virtual environment is an asset",
+                ]
+            },
+        },
+        status: "open",
+        application_link: "https://forms.gle/rawjpRT8bQ9AnxZh7",
+    },
+    {
         id: "ga",
         role: "General Ambassador",
         application_period: "May 18-31, 2022",
