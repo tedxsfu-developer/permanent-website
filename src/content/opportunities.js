@@ -38,7 +38,7 @@ const Opportunities = [
                 ]
             },
         },
-        status: "open",
+        status: "closed",
         application_link: "https://forms.gle/rawjpRT8bQ9AnxZh7",
     },
     {
